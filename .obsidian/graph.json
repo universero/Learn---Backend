@@ -1,0 +1,107 @@
+{
+  "collapse-filter": true,
+  "search": "",
+  "showTags": false,
+  "showAttachments": false,
+  "hideUnresolved": false,
+  "showOrphans": false,
+  "collapse-color-groups": true,
+  "colorGroups": [
+    {
+      "query": "path:数据库/Redis  ",
+      "color": {
+        "a": 1,
+        "rgb": 16711680
+      }
+    },
+    {
+      "query": "path:数据库/关系型数据库  ",
+      "color": {
+        "a": 1,
+        "rgb": 31743
+      }
+    },
+    {
+      "query": "path:数据库/MongoDB  ",
+      "color": {
+        "a": 1,
+        "rgb": 3589123
+      }
+    },
+    {
+      "query": "path:数据库/ElasticSearch  ",
+      "color": {
+        "a": 1,
+        "rgb": 324042
+      }
+    },
+    {
+      "query": "path:Go  ",
+      "color": {
+        "a": 1,
+        "rgb": 1361151
+      }
+    },
+    {
+      "query": "path:Java  ",
+      "color": {
+        "a": 1,
+        "rgb": 13071360
+      }
+    },
+    {
+      "query": "path:设计模式  ",
+      "color": {
+        "a": 1,
+        "rgb": 15770623
+      }
+    },
+    {
+      "query": "path:消息队列  ",
+      "color": {
+        "a": 1,
+        "rgb": 16728064
+      }
+    },
+    {
+      "query": "file:后端学习",
+      "color": {
+        "a": 1,
+        "rgb": 16777215
+      }
+    },
+    {
+      "query": "path:算法  ",
+      "color": {
+        "a": 1,
+        "rgb": 10089310
+      }
+    },
+    {
+      "query": "path:操作系统  ",
+      "color": {
+        "a": 1,
+        "rgb": 14725458
+      }
+    },
+    {
+      "query": "path:计算机网络  ",
+      "color": {
+        "a": 1,
+        "rgb": 3747058
+      }
+    }
+  ],
+  "collapse-display": true,
+  "showArrow": false,
+  "textFadeMultiplier": -0.3,
+  "nodeSizeMultiplier": 1.227,
+  "lineSizeMultiplier": 1,
+  "collapse-forces": false,
+  "centerStrength": 0.400997920997921,
+  "repelStrength": 10.0316008316008,
+  "linkStrength": 0.5,
+  "linkDistance": 200,
+  "scale": 0.7567617918680465,
+  "close": false
+}

@@ -1,0 +1,227 @@
+{
+  "main": {
+    "id": "2f99b37a761c9928",
+    "type": "split",
+    "children": [
+      {
+        "id": "5e47cfb2a50c0064",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a857109bbc12c88d",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "关系图谱"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "e330c28130e28152",
+    "type": "split",
+    "children": [
+      {
+        "id": "0b24d0c4aa81c662",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a80a4cd21523dffc",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "a114c3cd00d32f78",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#难题",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "ca68949075ba92c6",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          },
+          {
+            "id": "fd0aeb43601e2354",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "592b09278cb60f2e",
+    "type": "split",
+    "children": [
+      {
+        "id": "7eaf0618a4b7efce",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a4a84270c64e7a58",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "设计模式/3 - 装饰模式.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "3 - 装饰模式 的反向链接列表"
+            }
+          },
+          {
+            "id": "7b7839ff2c107e1f",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "出链"
+            }
+          },
+          {
+            "id": "7040ddddd5dea4ee",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "e75d7beec387ef7e",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "大纲"
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 425.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "obsidian-excalidraw-plugin:新建绘图文件": false,
+      "obsidian-git:Open Git source control": false
+    }
+  },
+  "active": "a80a4cd21523dffc",
+  "lastOpenFiles": [
+    "数据库/关系型数据库/数据库系统概念.pdf",
+    "2025-02-21.md",
+    "数据库/关系型数据库/第3章 SQL介绍.md",
+    "LICENSE",
+    "Learn---Backend/LICENSE",
+    "Learn---Backend",
+    "README.md",
+    "新建 Markdown文件.md",
+    "后端学习.md",
+    "计算机网络/计算机网络.md",
+    "操作系统/操作系统.md",
+    "数据库/关系型数据库/关系型数据库.md",
+    "Go/Go.md",
+    "算法/算法.md",
+    "算法/刷题日记/刷题日记.md",
+    "算法/刷题日记/面试经典150题/25-02-.md",
+    "数据库/关系型数据库/第2章 关系模型介绍.md",
+    "数据库/关系型数据库/第1章 引言.md",
+    "数据库/数据库.md",
+    "算法/刷题日记/面试经典150题/25-02-21.md",
+    "算法/刷题日记/面试经典150题/25-02-17.md",
+    "算法/刷题日记/面试经典150题/25-02-19.md",
+    "算法/刷题日记/面试经典150题/25-02-20.md",
+    "算法/刷题日记/面试经典150题/面试经典150题.md",
+    "算法/刷题日记/面试经典150题/25-02-20 122. 买卖股票的最佳时机 II.md",
+    "算法/刷题日记/面试经典150题/25-02-20 121. 买卖股票的最佳时机.md",
+    "算法/刷题日记/面试经典150题/25-02-19 189. 轮转数组.md",
+    "算法/刷题日记/面试经典150题/25-02-19 169. 多数元素.md",
+    "算法/刷题日记/面试经典150题/25-02-19 80. 删除有序数组中的重复项 II.md",
+    "设计模式/具体设计模式",
+    "算法/刷题日记",
+    "算法",
+    "算法/刷题日记/面试经典150题",
+    "消息队列/Kafka",
+    "消息队列/RabbitMQ",
+    "数据库/关系型数据库/imgs/数据抽象的三个层次.png",
+    "设计模式/imgs/单例模式 - 双重锁定.png",
+    "设计模式/imgs/访问者模式.png",
+    "设计模式/imgs/解释器模式.png",
+    "设计模式/imgs/享元模式.png",
+    "设计模式/imgs/中介者模式.png",
+    "设计模式/imgs/职责链模式.png",
+    "设计模式/imgs/命令模式.png",
+    "设计模式/imgs/桥接模式.png",
+    "设计模式/imgs/状态模式.png",
+    "设计模式/简单工厂模式.canvas"
+  ]
+}
