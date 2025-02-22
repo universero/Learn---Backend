@@ -5,7 +5,7 @@
   "showAttachments": false,
   "hideUnresolved": false,
   "showOrphans": false,
-  "collapse-color-groups": true,
+  "collapse-color-groups": false,
   "colorGroups": [
     {
       "query": "path:数据库/Redis  ",
@@ -53,7 +53,7 @@
       "query": "path:设计模式  ",
       "color": {
         "a": 1,
-        "rgb": 15770623
+        "rgb": 13019345
       }
     },
     {
@@ -102,6 +102,6 @@
   "repelStrength": 10.0316008316008,
   "linkStrength": 0.5,
   "linkDistance": 200,
-  "scale": 0.7567617918680472,
-  "close": false
+  "scale": 0.8854989543150522,
+  "close": true
 }
