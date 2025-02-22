@@ -4,25 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "ae995cb24ec702aa",
+        "id": "659d61182bb2944d",
         "type": "tabs",
         "children": [
           {
-            "id": "f344649c2c0c7f79",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "followCursor": false,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-list",
-              "title": "大纲"
-            }
-          },
-          {
-            "id": "6a8fd5e80f3b778b",
+            "id": "cdd6a1b090ce0471",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -31,8 +17,7 @@
               "title": "关系图谱"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -152,13 +137,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "数据库/关系型数据库/第3章 SQL介绍.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "第3章 SQL介绍 的大纲"
+              "title": "大纲"
             }
           }
         ],
@@ -175,11 +159,22 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "6a8fd5e80f3b778b",
+  "active": "cdd6a1b090ce0471",
   "lastOpenFiles": [
-    "后端学习.md",
-    "README.md",
     "杂谈/杂谈.md",
+    "杂谈/Bugs/Bugs.md",
+    "后端学习.md",
+    "杂谈/Bugs/25-02-22 ownerpro：mysql认证插件.md",
+    "杂谈/Bugs",
+    "算法/算法.md",
+    "算法/刷题日记/刷题日记.md",
+    "算法/刷题日记/面试经典150题/25-02-22.md",
+    "算法/刷题日记/面试经典150题/25-02-21.md",
+    "杂谈/Bugs/25-02-22 记一个抽象的阿里云BUG.md",
+    "杂谈/_imgs",
+    "杂谈/_imgs/阿里云UDP4500bug.png",
+    "README.md",
+    "杂谈/随笔",
     "数据库/关系型数据库/数据库系统概念/数据库系统概念.pdf",
     "数据库/关系型数据库/数据库系统概念/第4章 中级SQL.md",
     "数据库/关系型数据库/数据库系统概念/数据库系统概念.md",
@@ -205,16 +200,6 @@
     "计算机网络/计算机网络.md",
     "操作系统/操作系统.md",
     "Go/Go.md",
-    "算法/算法.md",
-    "算法/刷题日记/刷题日记.md",
-    "算法/刷题日记/面试经典150题/25-02-.md",
-    "算法/刷题日记/面试经典150题/25-02-21.md",
-    "算法/刷题日记/面试经典150题/25-02-17.md",
-    "算法/刷题日记/面试经典150题/25-02-19.md",
-    "算法/刷题日记/面试经典150题/25-02-20.md",
-    "设计模式/具体设计模式",
-    "算法/刷题日记",
-    "算法",
     "数据库/关系型数据库/_imgs/数据抽象的三个层次.png",
     "设计模式/_imgs/单例模式 - 双重锁定.png",
     "设计模式/_imgs/访问者模式.png",
@@ -222,7 +207,6 @@
     "设计模式/_imgs/享元模式.png",
     "设计模式/_imgs/中介者模式.png",
     "设计模式/_imgs/职责链模式.png",
-    "设计模式/_imgs/命令模式.png",
     "设计模式/简单工厂模式.canvas"
   ]
 }

@@ -90,6 +90,13 @@
         "a": 1,
         "rgb": 3747058
       }
+    },
+    {
+      "query": "path:杂谈  ",
+      "color": {
+        "a": 1,
+        "rgb": 8549235
+      }
     }
   ],
   "collapse-display": true,
@@ -102,6 +109,6 @@
   "repelStrength": 10.0316008316008,
   "linkStrength": 0.5,
   "linkDistance": 200,
-  "scale": 0.8854989543150522,
-  "close": true
+  "scale": 0.6316046762907591,
+  "close": false
 }
