@@ -4,17 +4,33 @@
     "type": "split",
     "children": [
       {
-        "id": "659d61182bb2944d",
+        "id": "1777954fe14dbe4b",
         "type": "tabs",
         "children": [
           {
-            "id": "cdd6a1b090ce0471",
+            "id": "067738a3e601acb4",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "关系图谱"
+              "type": "markdown",
+              "state": {
+                "file": "算法/刷题日记/面试经典150题/25-03-02.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "25-03-02"
+            }
+          },
+          {
+            "id": "38adb550021ab0f5",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "数据库/关系型数据库/数据库系统概念/数据库系统概念.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "数据库系统概念"
             }
           }
         ]
@@ -49,7 +65,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "上下文",
+                "query": "rune",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -159,54 +175,54 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "cdd6a1b090ce0471",
+  "active": "067738a3e601acb4",
   "lastOpenFiles": [
-    "杂谈/杂谈.md",
-    "杂谈/Bugs/Bugs.md",
-    "后端学习.md",
-    "杂谈/Bugs/25-02-22 ownerpro：mysql认证插件.md",
-    "杂谈/Bugs",
-    "算法/算法.md",
-    "算法/刷题日记/刷题日记.md",
-    "算法/刷题日记/面试经典150题/25-02-22.md",
-    "算法/刷题日记/面试经典150题/25-02-21.md",
-    "杂谈/Bugs/25-02-22 记一个抽象的阿里云BUG.md",
-    "杂谈/_imgs",
-    "杂谈/_imgs/阿里云UDP4500bug.png",
-    "README.md",
-    "杂谈/随笔",
+    "算法/刷题日记/面试经典150题/25-03-.md",
+    "算法/刷题日记/面试经典150题/25-03-02.md",
+    "算法/刷题日记/面试经典150题/25-03-01.md",
+    "算法/刷题日记/面试经典150题/25-02-23.md",
     "数据库/关系型数据库/数据库系统概念/数据库系统概念.pdf",
-    "数据库/关系型数据库/数据库系统概念/第4章 中级SQL.md",
-    "数据库/关系型数据库/数据库系统概念/数据库系统概念.md",
-    "数据库/关系型数据库/关系型数据库.md",
-    "杂谈",
-    "数据库/关系型数据库/数据库系统概念/第3章 SQL介绍.md",
-    "设计模式/具体设计模式/5 - 工厂方法模式.md",
-    "设计模式/具体设计模式/11 - 抽象工厂模式.md",
-    "设计模式/具体设计模式/2 - 策略模式.md",
-    "数据库/关系型数据库/mysql/mysql八股.md",
-    "数据库/数据库.md",
-    "数据库/关系型数据库/数据库系统概念/第1章 引言.md",
+    "算法/刷题日记/面试经典150题/25-02-28.md",
+    "算法/刷题日记/面试经典150题/25-02-17.md",
     "数据库/关系型数据库/数据库系统概念/第2章 关系模型介绍.md",
-    "数据库/关系型数据库/mysql",
-    "数据库/关系型数据库/数据库系统概念",
+    "数据库/关系型数据库/数据库系统概念/第5章 高级SQL.md",
+    "算法/刷题日记/面试经典150题/25-02-27.md",
+    "算法/刷题日记/面试经典150题/25-02-25.md",
+    "数据库/数据库.md",
+    "运维/运维.md",
+    "后端学习.md",
+    "运维/k8s集群管理/k8s集群管理.md",
+    "Excalidraw/风格化渲染.md",
+    "运维/k8s集群管理/helm.md",
+    "Excalidraw",
+    "运维/k8s集群管理/helm",
+    "运维/k8s集群管理",
+    "运维",
+    "UML/UML.md",
+    "UML/UML用户指南.pdf",
+    "Pasted image 20250224085745.png",
+    "UML/_imgs/关系图像.png",
+    "Excalidraw/UML 2025-02-24 08.55.57.excalidraw.md",
+    "Excalidraw/Drawing 2025-02-24 08.48.51.excalidraw.md",
+    "算法/刷题日记/刷题日记.md",
+    "UML/_imgs",
+    "UML/_.md",
+    "算法/刷题日记/面试经典150题/25-02-24.md",
+    "UML/UML用户指南.pdf.crdownload",
+    "README.md",
+    "未命名/desktop.ini",
+    "UML",
+    "设计模式/具体设计模式/4 - 代理模式.md",
+    "数据库/关系型数据库/数据库系统概念/数据库系统概念.md",
+    "数据库/关系型数据库/数据库系统概念/第4章 中级SQL.md",
+    "杂谈/_imgs/阿里云UDP4500bug.png",
     "关系图谱.png",
     "Pasted image 20250221182925.png",
-    "2025-02-21.md",
-    "LICENSE",
-    "Learn---Backend/LICENSE",
-    "Learn---Backend",
-    "新建 Markdown文件.md",
-    "计算机网络/计算机网络.md",
-    "操作系统/操作系统.md",
-    "Go/Go.md",
     "数据库/关系型数据库/_imgs/数据抽象的三个层次.png",
     "设计模式/_imgs/单例模式 - 双重锁定.png",
     "设计模式/_imgs/访问者模式.png",
     "设计模式/_imgs/解释器模式.png",
     "设计模式/_imgs/享元模式.png",
-    "设计模式/_imgs/中介者模式.png",
-    "设计模式/_imgs/职责链模式.png",
     "设计模式/简单工厂模式.canvas"
   ]
 }

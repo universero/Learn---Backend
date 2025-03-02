@@ -97,6 +97,20 @@
         "a": 1,
         "rgb": 8549235
       }
+    },
+    {
+      "query": "path:运维  ",
+      "color": {
+        "a": 1,
+        "rgb": 15988110
+      }
+    },
+    {
+      "query": "path:UML  ",
+      "color": {
+        "a": 1,
+        "rgb": 14964824
+      }
     }
   ],
   "collapse-display": true,
@@ -109,6 +123,6 @@
   "repelStrength": 10.0316008316008,
   "linkStrength": 0.5,
   "linkDistance": 200,
-  "scale": 0.6316046762907591,
-  "close": false
+  "scale": 0.7890910184601327,
+  "close": true
 }
