@@ -4,35 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "1777954fe14dbe4b",
+        "id": "cbbb722d8b23e64f",
         "type": "tabs",
         "children": [
           {
-            "id": "067738a3e601acb4",
+            "id": "1406b58ce7599982",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "操作系统/MIT-6.S081/MIT-6.S081.md",
+                "file": "操作系统/MIT-6.S081/2 - Xv6与Unix工具.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "MIT-6.S081"
-            }
-          },
-          {
-            "id": "38301db0b81cc48c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "操作系统/MIT-6.S081/1 - 概览与环境搭建.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "1 - 概览与环境搭建"
+              "title": "2 - Xv6与Unix工具"
             }
           }
         ]
@@ -67,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "rune",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -92,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "592b09278cb60f2e",
@@ -178,15 +163,32 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "067738a3e601acb4",
+  "active": "a80a4cd21523dffc",
   "lastOpenFiles": [
-    "操作系统/MIT-6.S081/1 - 概览与环境搭建.md",
-    "操作系统/MIT-6.S081/MIT-6.S081.md",
-    "远程调试.png",
-    "Makefile.png",
-    "Pasted image 20250304164057.png",
+    "操作系统/MIT-6.S081/_imgs/UPROGS-sleep.png",
+    "操作系统/MIT-6.S081/2 - Xv6与Unix工具.md",
+    "算法/刷题日记/面试经典150题/25-03-07.md",
+    "算法/刷题日记/面试经典150题/25-03-05.md",
+    "算法/刷题日记/面试经典150题/25-03-.md",
+    "数据库/关系型数据库/数据库系统概念/第6章 使用E-R模型的数据库设计.md",
+    "Excalidraw/Drawing 2025-03-06 16.37.12.excalidraw.md",
+    "Excalidraw/desktop.ini",
+    "Excalidraw",
+    "数据库/关系型数据库/数据库系统概念/数据库系统概念.pdf",
+    "数据库/关系型数据库/数据库系统概念/第5章 高级SQL.md",
+    "数据库/关系型数据库/数据库系统概念/数据库系统概念.md",
+    "数据库/关系型数据库/数据库系统概念/第3章 SQL介绍.md",
+    "数据库/关系型数据库/数据库系统概念/第4章 中级SQL.md",
+    "数据库/关系型数据库/关系型数据库.md",
+    "README.md",
     "Pasted image 20250304164053.png",
+    "Pasted image 20250304164057.png",
     "Pasted image 20250304163303.png",
+    "操作系统/MIT-6.S081/_imgs/远程调试.png",
+    "操作系统/MIT-6.S081/_imgs/Makefile.png",
+    "算法/刷题日记/面试经典150题/25-03-04.md",
+    "操作系统/MIT-6.S081/MIT-6.S081.md",
+    "操作系统/MIT-6.S081/1 - 概览与环境搭建.md",
     "操作系统/MIT-6.S081/_imgs/设置调试器.png",
     "操作系统/MIT-6.S081/_imgs/CLion-WSL.png",
     "操作系统/操作系统.md",
@@ -194,8 +196,6 @@
     "Excalidraw/风格化渲染.md",
     "操作系统/MIT-6.S081/_imgs",
     "操作系统/MIT-6.S081",
-    "算法/刷题日记/面试经典150题/25-03-04.md",
-    "算法/刷题日记/面试经典150题/25-03-.md",
     "算法/算法.md",
     "算法/算法/核心框架 - 双指针.md",
     "算法/算法",
@@ -205,26 +205,11 @@
     "Go/简单框架实现/Fcache.md",
     "Go/简单框架实现/简单框架实现.md",
     "Go/简单框架实现",
-    "算法/刷题日记/面试经典150题/25-03-02.md",
-    "算法/刷题日记/面试经典150题/25-03-01.md",
-    "算法/刷题日记/面试经典150题/25-02-23.md",
-    "数据库/关系型数据库/数据库系统概念/数据库系统概念.pdf",
-    "算法/刷题日记/面试经典150题/25-02-28.md",
-    "算法/刷题日记/面试经典150题/25-02-17.md",
-    "数据库/关系型数据库/数据库系统概念/第2章 关系模型介绍.md",
-    "数据库/关系型数据库/数据库系统概念/第5章 高级SQL.md",
-    "算法/刷题日记/面试经典150题/25-02-27.md",
-    "算法/刷题日记/面试经典150题/25-02-25.md",
-    "数据库/数据库.md",
-    "运维/运维.md",
-    "Excalidraw",
     "运维/k8s集群管理/helm",
     "运维/k8s集群管理",
     "运维",
-    "UML/UML用户指南.pdf",
     "Pasted image 20250224085745.png",
     "UML/_imgs/关系图像.png",
-    "杂谈/_imgs/阿里云UDP4500bug.png",
     "设计模式/简单工厂模式.canvas"
   ]
 }
