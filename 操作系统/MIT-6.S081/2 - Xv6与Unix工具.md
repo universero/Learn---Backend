@@ -199,3 +199,20 @@ And it's necessary to deal the return value of functions like pipe, read and wri
 
 >Write a concurrent version of prime sieve using pipes. This idea is due to Doug McIlroy, inventor of Unix pipes. The picture halfway down [this page](http://swtch.com/~rsc/thread/) and the surrounding text explain how to do it. Your solution should be in the file user/primes.c.
 >Your goal is to use pipe and fork to set up the pipeline. The first process feeds the numbers 2 through 35 into the pipeline. For each prime number, you will arrange to create one process that reads from its left neighbor over a pipe and writes to its right neighbor over another pipe. Since xv6 has limited number of file descriptors and processes, the first process can stop at 35.
+
+Here are some hints
+- Be careful to close file descriptors that a process doesn't need, because otherwise your program will run xv6 out of resources before the first process reaches 35.
+- Once the first process reaches 35, it should wait until the entire pipeline terminates, including all children, grandchildren, &c. Thus the main primes process should only exit after all the output has been printed, and after all the other primes processes have exited.
+- Hint: read returns zero when the write-side of a pipe is closed.
+- It's simplest to directly write 32-bit (4-byte) ints to the pipes, rather than using formatted ASCII I/O.
+- You should create the processes in the pipeline only as they are needed.
+- Add the program to UPROGS in Makefile.
+### Analysis
+- Firstly, create the prime.c in /user and add the prime to UPROG in make file
+- 感觉这里的分析有点难写就用中文了。不知道是我英语太差了，还是lab的文档写的太过简略，看完后压根不知道要做什么。搜了几篇博客后发现，要实现的应该是一个并发的素数筛，类似于厄拉托斯素数筛的并发版。大致的逻辑如下图
+![[并行素数筛.png]]
+- 知道了要做什么之后，也算是有了方向。先看看厄拉托斯素数筛是什么。简单来说，如果要找出n及以下的所有素数，那么从2到n都先假设为素数，然后从2开始依次将遍历到的素数的倍数标记为非素数，如遍历到2就把4,6,8都标记为非素数.这样就能找到所有n及以下的素数
+- 那么对于prime这个程序来说,我们要做的就是将这么一个依次遍历的过程改成一个流水线的过程, 主线程向pipe中写入2到35, 第一个子线程输出2 然后 drop掉所有2的倍数, 写入所有不整除2的数
+- 实现思路
+- **这个素数筛的实现思路比较简单，最困难的是如何处理好fd的close**，重复关闭close会导致usertrap的错误，需要把何时关闭捋得很清楚。最终靠着deepseek-R1解决了fd关闭的问题😅
+- 另外就是文件名应该是primes，不小心弄成了prime，直接跑可以过，但是测试过不了，还纳闷了半天。
