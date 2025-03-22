@@ -1,4 +1,4 @@
 {
-  "showRibbon": true,
-  "cssTheme": ""
+  "showRibbon": false,
+  "cssTheme": "Atom"
 }

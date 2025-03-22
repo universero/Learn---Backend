@@ -4,21 +4,56 @@
     "type": "split",
     "children": [
       {
-        "id": "3d05a4b53da1900e",
+        "id": "cbc1f04848e7c684",
         "type": "tabs",
         "children": [
           {
-            "id": "5f68fd8cba361159",
+            "id": "72773a171d309e04",
+            "type": "leaf",
+            "state": {
+              "type": "webviewer",
+              "state": {
+                "url": "https://pdos.csail.mit.edu/6.828/2021/labs/syscall.html",
+                "title": "Lab: System calls",
+                "mode": "reader"
+              },
+              "icon": "globe-2",
+              "title": "Lab: System calls"
+            }
+          },
+          {
+            "id": "b5cb2baa59ebc2a6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "算法/刷题日记/面试经典150题/25-03-19.md",
+                "file": "数据库/MongoDB/chapters/简介.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "25-03-19"
+              "title": "简介"
+            }
+          }
+        ],
+        "currentTab": 1
+      },
+      {
+        "id": "18a34cd9acaeec4d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1d536a9ef7e5ab05",
+            "type": "leaf",
+            "state": {
+              "type": "webviewer",
+              "state": {
+                "url": "https://www.mongodb.com/zh-cn/docs/manual/core/document/",
+                "title": "Documents - MongoDB Manual v8.0 - MongoDB Docs",
+                "mode": "webview"
+              },
+              "icon": "globe-2",
+              "title": "Documents - MongoDB Manual v8.0 - MongoDB Docs"
             }
           }
         ]
@@ -48,6 +83,16 @@
             }
           },
           {
+            "id": "455270c3a6f73b0f",
+            "type": "leaf",
+            "state": {
+              "type": "reminder-list",
+              "state": {},
+              "icon": "clock",
+              "title": "Reminders"
+            }
+          },
+          {
             "id": "a114c3cd00d32f78",
             "type": "leaf",
             "state": {
@@ -65,7 +110,7 @@
             }
           },
           {
-            "id": "ca68949075ba92c6",
+            "id": "3fe15020a5839613",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -78,7 +123,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 231.50271224975586
   },
   "right": {
     "id": "592b09278cb60f2e",
@@ -94,7 +139,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "设计模式/3 - 装饰模式.md",
+                "file": "Go/性能分析/pprof性能分析.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +149,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "3 - 装饰模式 的反向链接列表"
+              "title": "pprof性能分析 的反向链接列表"
             }
           },
           {
@@ -113,11 +158,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Go/性能分析/pprof性能分析.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "出链"
+              "title": "pprof性能分析 的出链列表"
             }
           },
           {
@@ -141,21 +187,20 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "算法/刷题日记/面试经典150题/25-03-13.md",
+                "file": "Go/性能分析/pprof性能分析.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "25-03-13 的大纲"
+              "title": "pprof性能分析 的大纲"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 200,
+    "width": 391.5,
     "collapsed": true
   },
   "left-ribbon": {
@@ -164,54 +209,54 @@
       "obsidian-excalidraw-plugin:新建绘图文件": false
     }
   },
-  "active": "5f68fd8cba361159",
+  "active": "a80a4cd21523dffc",
   "lastOpenFiles": [
-    "算法/刷题日记/面试经典150题/25-03-18.md",
-    "算法/刷题日记/面试经典150题/25-03-19.md",
+    "新建 文本文档.txt",
+    "数据库/MongoDB/chapters/简介.md",
+    "Bson数据类型.png",
+    "数据库/MongoDB/MongoDB.md",
+    "数据库/关系型数据库/关系型数据库.md",
+    "数据库/MongoDB/chapters",
+    "数据库/MongoDB/_imgs",
+    "算法/刷题日记/面试经典150题/25-03-22.md",
+    "操作系统/MIT-6.S081/3 - System Calls.md",
+    "操作系统/MIT-6.S081/_imgs/Layout of a process’s virtual address space.png",
+    "操作系统/MIT-6.S081/_imgs/xv6 kernel source files.png",
+    "操作系统/MIT-6.S081/MIT-6.S081.md",
+    "操作系统/MIT-6.S081/2 - Xv6与Unix工具.md",
+    "算法/刷题日记/刷题日记.md",
+    "算法/刷题日记/面试经典150题/25-03-21.md",
     "算法/刷题日记/面试经典150题/25-03-.md",
-    "面经&八股/代码随想录知识星球精华（最强八股文）第五版（计算机基础篇）.pdf",
-    "计算机网络/知识点/HTTP.md",
-    "计算机网络/知识点/计网知识点.md",
-    "计算机网络/知识点/网页获取流程.md",
-    "计算机网络/知识点/DNS.md",
-    "计算机网络/计算机网络.md",
-    "计算机网络/知识点",
-    "Excalidraw/草稿.md",
-    "算法/刷题日记/面试经典150题/25-03-17.md",
-    "设计模式/具体设计模式/17 - 单例模式.md",
+    "Go/性能分析/pprof性能分析.md",
+    "others/TODO.md",
     "数据库/关系型数据库/数据库系统概念/数据库系统概念.pdf",
-    "数据库/关系型数据库/数据库系统概念/作业.md",
+    "others",
+    "TODO/essay-stateless.md",
+    "数据库/关系型数据库/数据库系统概念/第7章 关系数据库设计.md",
+    "数据库/数据库.md",
     "数据库/关系型数据库/数据库系统概念/数据库系统概念.md",
-    "数据库/关系型数据库/数据库系统概念/实验.md",
-    "草稿.md",
+    "数据库/关系型数据库/数据库系统概念/第6章 使用E-R模型的数据库设计.md",
+    "数据库/关系型数据库/_imgs/联系集.png",
+    "操作系统/操作系统.md",
+    "TODO",
+    "Go/Go.md",
+    "Go/性能分析/benchmark基准测试.md",
+    "Go/性能分析/性能分析.md",
+    "Go/性能分析",
+    "Go/简单框架实现/简单框架实现.md",
+    "Go/简单框架实现/Fcache.md",
+    "Go/简单框架实现/Fgo.md",
+    "算法/刷题日记/面试经典150题/25-03-20.md",
+    "面经&八股/代码随想录知识星球精华（最强八股文）第五版（计算机基础篇）.pdf",
+    "计算机网络/知识点",
     "1.png",
     "Pasted image 20250313152110.png",
     "30.png",
     "29-2.png",
     "29.png",
     "数据库/关系型数据库/_imgs/大学模式.png",
-    "29.png",
-    "29.png",
-    "Pasted image 20250314212503.png",
-    "Pasted image 20250314212248.png",
-    "算法/刷题日记/面试经典150题/25-03-13.md",
-    "算法/刷题日记/面试经典150题/25-03-11.md",
-    "数据库/关系型数据库/mysql/记录存储.md",
-    "数据库/关系型数据库/mysql/mysql八股.md",
-    "数据库/关系型数据库/mysql/Select语句执行流程.md",
-    "杂谈/Bugs/sonic库不合规的.md",
-    "杂谈/Bugs/25-02-22 ownerpro：mysql认证插件.md",
-    "杂谈/Bugs/25-02-22 记一个抽象的阿里云BUG.md",
-    "杂谈/Bugs/Bugs.md",
-    "操作系统/MIT-6.S081/2 - Xv6与Unix工具.md",
-    "数据库/关系型数据库/关系型数据库.md",
     "面经&八股/代码随想录知识星球精华（最强八股文）第五版（Java篇）.pdf",
     "面经&八股/代码随想录知识星球精华（最强八股文）第五版（Go篇）.pdf",
-    "面经&八股/代码随想录知识星球精华（最强八股文）第五版（面经篇）.pdf",
-    "面经&八股/代码随想录知识星球精华（最强八股文）第五版（算法篇）.pdf",
-    "面经&八股/代码随想录知识星球精华（最强八股文）第五版（概述）.pdf",
-    "面经&八股",
-    "Excalidraw/desktop.ini",
     "设计模式/简单工厂模式.canvas"
   ]
 }
