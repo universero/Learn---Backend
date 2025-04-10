@@ -111,6 +111,13 @@
         "a": 1,
         "rgb": 14964824
       }
+    },
+    {
+      "query": "path:分布式  ",
+      "color": {
+        "a": 1,
+        "rgb": 8678399
+      }
     }
   ],
   "collapse-display": true,
@@ -118,11 +125,11 @@
   "textFadeMultiplier": -0.3,
   "nodeSizeMultiplier": 1.227,
   "lineSizeMultiplier": 1,
-  "collapse-forces": false,
+  "collapse-forces": true,
   "centerStrength": 0.400997920997921,
   "repelStrength": 10.0316008316008,
-  "linkStrength": 0.5,
+  "linkStrength": 0.498085710757071,
   "linkDistance": 200,
-  "scale": 0.7731253047638109,
+  "scale": 0.713492975897293,
   "close": true
 }

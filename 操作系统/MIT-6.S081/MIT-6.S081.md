@@ -1,5 +1,6 @@
 > [课程地址  6.S081 / Fall 2021](https://pdos.csail.mit.edu/6.828/2021/index.html)
 > [参考博客 - foliet](https://zhuanlan.zhihu.com/p/547417990)
+> [课程翻译](https://mit-public-courses-cn-translatio.gitbook.io/mit6-s081)
 > 2025-03
 ___
 ## Foreword
@@ -17,4 +18,4 @@ ___
 
 ### [[2 - Xv6与Unix工具 | Xv6 & Unix utilities]]
 
-### [[System Calls]]
+### [[3 - System Calls|System Calls]]

@@ -28,3 +28,15 @@ Xv6 uses page tables to give each process its own address space.
 - Xv6 kernel maintains many pieces of state for each process, which it gathers into a struct proc(kernel/proc.h)
 - A process has a user stack and a kernel stack which respectively execute user mode code and kernel mode code. And they are seperated, code in kernel stack can be execute even if user stack is wrecked
 - A process can make a system call by executing the RISC-V ecall instruction. This instruction raises the hardware privilege level and changes the program counter to a kernel-defined entry point. The code at the entry point switches to a kernel stack and executes the kernel instructions that implement the system call.When the system call completes, the kernel switches back to the user stack and returns to user space by calling the sret instruction, which lowers the hardware privilege level and resumes executing user instructions just after the system call instruction.
+
+## System Call Tracing(moderate)
+
+> In this assignment you will add a system call tracing feature that may help you when debugging later labs. You'll create a new trace system call that will control tracing. It should take one argument, an integer "mask", whose bits specify which system calls to trace. For example, to trace the fork system call, a program calls trace(1 << SYS_fork), where SYS_fork is a syscall number from kernel/syscall.h. You have to modify the xv6 kernel to print out a line when each system call is about to return, if the system call's number is set in the mask. The line should contain the process id, the name of the system call and the return value; you don't need to print the system call arguments. The trace system call should enable tracing for the process that calls it and any children that it subsequently forks, but should not affect other processes.
+
+hints:
+- Add `$U/_trace` to UPROGS in Makefile
+- Run `make qemu` and you will see that the compiler cannot compile `user/trace.c`, because the user-space stubs for the system call don't exist yet;
+- Add a prototype for the system call to `user/user.h`, a stub to `user/usys.pl`, and a syscall number to `kernel/syscall.h`. The Makefile invokes the perl script `user/usys.pl`, which produces user/usys.S, the acutal system call stubs, which use the RISC-V `ecall`instruction to transition to the kernel.
+	 - Add a `sys_trace()` function in `kernel/sysproc.c` that implements the new system call by remembering its argument in a new variable in the proc structure (see kernel/proc.h). The functions to retrieve system call arguments from user space are in kernel/syscall.c, and you can see examples of their use in kernel/sysproc.c.
+ - Modify `fork()` (see kernel/proc.c) to copy the trace mask from the parent to the child process.
+ - Modify the `syscall()` function in kernel/syscall.c to print the trace output. You will need to add an array of syscall names to index into.

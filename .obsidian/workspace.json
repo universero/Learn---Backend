@@ -4,56 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "cbc1f04848e7c684",
+        "id": "a387655a88ce1631",
         "type": "tabs",
         "children": [
           {
-            "id": "72773a171d309e04",
-            "type": "leaf",
-            "state": {
-              "type": "webviewer",
-              "state": {
-                "url": "https://pdos.csail.mit.edu/6.828/2021/labs/syscall.html",
-                "title": "Lab: System calls",
-                "mode": "reader"
-              },
-              "icon": "globe-2",
-              "title": "Lab: System calls"
-            }
-          },
-          {
-            "id": "b5cb2baa59ebc2a6",
+            "id": "8be3c38bd4822e98",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "数据库/MongoDB/chapters/简介.md",
+                "file": "Go/简单框架实现/简单框架实现.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "简介"
+              "title": "简单框架实现"
             }
-          }
-        ],
-        "currentTab": 1
-      },
-      {
-        "id": "18a34cd9acaeec4d",
-        "type": "tabs",
-        "children": [
+          },
           {
-            "id": "1d536a9ef7e5ab05",
+            "id": "1aafc19b348a29b1",
             "type": "leaf",
             "state": {
-              "type": "webviewer",
+              "type": "markdown",
               "state": {
-                "url": "https://www.mongodb.com/zh-cn/docs/manual/core/document/",
-                "title": "Documents - MongoDB Manual v8.0 - MongoDB Docs",
-                "mode": "webview"
+                "file": "Go/基础知识/_docs/goroutine.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "globe-2",
-              "title": "Documents - MongoDB Manual v8.0 - MongoDB Docs"
+              "icon": "lucide-file",
+              "title": "goroutine"
             }
           }
         ]
@@ -118,6 +97,16 @@
               "icon": "lucide-bookmark",
               "title": "书签"
             }
+          },
+          {
+            "id": "0d2a2d619944ee3c",
+            "type": "leaf",
+            "state": {
+              "type": "surfing-tab-tree",
+              "state": {},
+              "icon": "chrome",
+              "title": "Surfing Tab Tree"
+            }
           }
         ]
       }
@@ -139,7 +128,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Go/性能分析/pprof性能分析.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -149,7 +137,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "pprof性能分析 的反向链接列表"
+              "title": "反向链接"
             }
           },
           {
@@ -205,58 +193,59 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "surfing:surfing-bookmark-manager": false,
       "graph:查看关系图谱": false,
-      "obsidian-excalidraw-plugin:新建绘图文件": false
+      "obsidian-excalidraw-plugin:新建绘图文件": false,
+      "obsidian-kanban:创建新看板": false
     }
   },
-  "active": "a80a4cd21523dffc",
+  "active": "8be3c38bd4822e98",
   "lastOpenFiles": [
-    "新建 文本文档.txt",
-    "数据库/MongoDB/chapters/简介.md",
-    "Bson数据类型.png",
-    "数据库/MongoDB/MongoDB.md",
-    "数据库/关系型数据库/关系型数据库.md",
-    "数据库/MongoDB/chapters",
-    "数据库/MongoDB/_imgs",
-    "算法/刷题日记/面试经典150题/25-03-22.md",
-    "操作系统/MIT-6.S081/3 - System Calls.md",
-    "操作系统/MIT-6.S081/_imgs/Layout of a process’s virtual address space.png",
-    "操作系统/MIT-6.S081/_imgs/xv6 kernel source files.png",
-    "操作系统/MIT-6.S081/MIT-6.S081.md",
-    "操作系统/MIT-6.S081/2 - Xv6与Unix工具.md",
-    "算法/刷题日记/刷题日记.md",
-    "算法/刷题日记/面试经典150题/25-03-21.md",
-    "算法/刷题日记/面试经典150题/25-03-.md",
-    "Go/性能分析/pprof性能分析.md",
-    "others/TODO.md",
-    "数据库/关系型数据库/数据库系统概念/数据库系统概念.pdf",
-    "others",
-    "TODO/essay-stateless.md",
-    "数据库/关系型数据库/数据库系统概念/第7章 关系数据库设计.md",
-    "数据库/数据库.md",
-    "数据库/关系型数据库/数据库系统概念/数据库系统概念.md",
-    "数据库/关系型数据库/数据库系统概念/第6章 使用E-R模型的数据库设计.md",
-    "数据库/关系型数据库/_imgs/联系集.png",
-    "操作系统/操作系统.md",
-    "TODO",
-    "Go/Go.md",
-    "Go/性能分析/benchmark基准测试.md",
-    "Go/性能分析/性能分析.md",
-    "Go/性能分析",
+    "Go/基础知识/_docs/goroutine.md",
+    "数据库/关系型数据库/数据库系统概念/_docs/数据库系统概念.pdf",
     "Go/简单框架实现/简单框架实现.md",
-    "Go/简单框架实现/Fcache.md",
-    "Go/简单框架实现/Fgo.md",
-    "算法/刷题日记/面试经典150题/25-03-20.md",
-    "面经&八股/代码随想录知识星球精华（最强八股文）第五版（计算机基础篇）.pdf",
-    "计算机网络/知识点",
-    "1.png",
-    "Pasted image 20250313152110.png",
-    "30.png",
-    "29-2.png",
-    "29.png",
-    "数据库/关系型数据库/_imgs/大学模式.png",
-    "面经&八股/代码随想录知识星球精华（最强八股文）第五版（Java篇）.pdf",
-    "面经&八股/代码随想录知识星球精华（最强八股文）第五版（Go篇）.pdf",
+    "操作系统/基础知识/_docs/并发/自旋锁.md",
+    "操作系统/基础知识/_docs/并发/并发.md",
+    "UML/UML用户指南.pdf",
+    "计算机网络/计算机网络.md",
+    "操作系统/基础知识/基础知识.md",
+    "操作系统/操作系统.md",
+    "Go/简单框架实现/未命名.md",
+    "Go/简单框架实现/_imgs",
+    "Go/简单框架实现/_imgs/GoroutinePool逻辑.png",
+    "操作系统/基础知识/_imgs",
+    "操作系统/基础知识/_docs/并发",
+    "操作系统/基础知识/_docs",
+    "操作系统/基础知识/锁",
+    "README.md",
+    "操作系统/并发",
+    "操作系统/基础知识",
+    "Go/简单框架实现/_docs/Fpool.md",
+    "Go/基础知识/_imgs",
+    "Go/基础知识/未命名.md",
+    "Go/基础知识/_imgs/GMP调度模型.png",
+    "Pasted image 20250410095107.png",
+    "Go/基础知识/基础知识.md",
+    "算法/刷题日记/面试经典150题/25-04-10.md",
+    "算法/算法.md",
+    "3a92d5f34b2449b3e6dadeb8916fb47.jpg",
+    "032616dcae426c7491cd758a7ab1551.jpg",
+    "b31f56c9bcb09e67555ad134b542f66.jpg",
+    "数据库/关系型数据库/数据库系统概念/作业.md",
+    "f2130b549d1d2c6b1261a31da8fdc2f.jpg",
+    "数据库/关系型数据库/数据库系统概念/_docs/第7章 关系数据库设计.md",
+    "算法/刷题日记/面试经典150题/25-04-09.md",
+    "算法/刷题日记/面试经典150题/25-04-08.md",
+    "self/面经问题收集.md",
+    "self/Dashboard.md",
+    "分布式/面经/_docs/openFeign远程调用时，nacos宕机.md",
+    "分布式/面经/面经.md",
+    "self/草稿.md",
+    "数据库/关系型数据库/数据库系统概念/_docs/第6章 使用E-R模型的数据库设计.md",
+    "Pasted image 20250408153404.png",
+    "Pasted image 20250408153333.png",
+    "Pasted image 20250408153226.png",
+    "算法/刷题日记/面试经典150题/25-04-03.md",
     "设计模式/简单工厂模式.canvas"
   ]
 }

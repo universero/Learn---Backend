@@ -1,0 +1,48 @@
+{
+  "bookmarks": [
+    {
+      "id": "819715069",
+      "name": "大夏学堂",
+      "url": "https://elearning.ecnu.edu.cn/",
+      "description": "北京毕博",
+      "category": [
+        ""
+      ],
+      "tags": "",
+      "created": 1744071300000,
+      "modified": 1744071300000
+    },
+    {
+      "id": "-222528038",
+      "name": "LeetCode",
+      "url": "https://leetcode.cn/",
+      "description": "海量技术面试题库，拥有算法、数据结构、系统设计等 1000+题目，帮助你高效提升编程技能，轻松拿下世界 IT 名企 Dream Offer。",
+      "category": [
+        ""
+      ],
+      "tags": "",
+      "created": 1744071300000,
+      "modified": 1744071300000
+    },
+    {
+      "id": "-1620561204",
+      "name": "腾讯元宝",
+      "url": "https://yuanbao.tencent.com/chat/naQivTmsDa/0ea5fcbe-28f0-4d76-afcf-6e128988b13f",
+      "description": "",
+      "category": [
+        "ROOT"
+      ],
+      "tags": "",
+      "created": 1743640380000,
+      "modified": 1744078080000
+    }
+  ],
+  "categories": [
+    {
+      "value": "ROOT",
+      "text": "ROOT",
+      "label": "ROOT",
+      "children": []
+    }
+  ]
+}
