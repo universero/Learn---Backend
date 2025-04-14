@@ -1,4 +1,4 @@
-> [[goroutine | goroutine基础知识]]
+> [[GMP| goroutine基础知识]]
 > [参考博客](https://strikefreedom.top/archives/high-performance-implementation-of-goroutine-pool#%E5%8F%82%E8%80%83)
 > ___
 

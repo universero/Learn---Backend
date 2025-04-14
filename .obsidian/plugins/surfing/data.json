@@ -40,19 +40,7 @@
     ],
     "defaultFilterType": "tree"
   },
-  "treeData": [
-    {
-      "id": "defaf0d8ee142ec9",
-      "parent": 0,
-      "droppable": true,
-      "text": "909. 蛇梯棋 - 力扣（LeetCode）",
-      "data": {
-        "fileType": "site",
-        "fileSize": "",
-        "icon": {}
-      }
-    }
-  ],
+  "treeData": [],
   "enableHtmlPreview": true,
   "supportLivePreviewInlineUrl": false,
   "enableTreeView": true,

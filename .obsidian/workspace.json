@@ -4,35 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "a387655a88ce1631",
+        "id": "0fcd30e61d8a97d2",
         "type": "tabs",
         "children": [
           {
-            "id": "8be3c38bd4822e98",
+            "id": "e0c9e7218d34739a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Go/简单框架实现/简单框架实现.md",
+                "file": "后端学习.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "简单框架实现"
-            }
-          },
-          {
-            "id": "1aafc19b348a29b1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Go/基础知识/_docs/goroutine.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "goroutine"
+              "title": "后端学习"
             }
           }
         ]
@@ -199,11 +185,37 @@
       "obsidian-kanban:创建新看板": false
     }
   },
-  "active": "8be3c38bd4822e98",
+  "active": "e0c9e7218d34739a",
   "lastOpenFiles": [
-    "Go/基础知识/_docs/goroutine.md",
-    "数据库/关系型数据库/数据库系统概念/_docs/数据库系统概念.pdf",
+    "数据库/Redis/_imgs/raw.webp",
+    "2ae0ed790c7e7403f215acb2bd82e884.webp",
+    "数据库/Redis/_imgs/Redis-SDS数据结构.png",
+    "数据库/Redis/_docs/Redis数据类型与数据结构.md",
+    "数据库/Redis/_imgs/listpack.png",
+    "数据库/Redis/_imgs/Redis-跳表.png",
+    "数据库/Redis/_imgs/整数集合的升级.png",
+    "数据库/Redis/_imgs/Redis-Hash表.png",
+    "数据库/Redis/_docs/Redis线程模型.md",
+    "数据库/Redis/_docs/Redis概述.md",
+    "数据库/Redis/_docs/Redis集群.md",
+    "数据库/Redis/_docs/Redis持久化.md",
+    "数据库/Redis/_docs/Redis过期删除与内存淘汰.md",
+    "数据库/Redis/_docs/Redis缓存设计.md",
+    "self/简历准备.md",
+    "数据库/Redis/_imgs/Redis-对象结构.png",
+    "数据库/Redis/_imgs/Redis-键值对存储.png",
+    "数据库/Redis/_imgs/Redis-数据类型.png",
+    "数据库/Redis/_imgs/string-int.png",
+    "Go/基础知识/_docs/go命令.md",
+    "Go/基础知识/基础知识.md",
+    "算法/刷题日记/面试经典150题/25-04-14.md",
+    "算法/刷题日记/面试经典150题/25-04-13.md",
+    "数据库/Redis/未命名",
+    "数据库/Redis/Redis.md",
+    "Go/简单框架实现/_docs/Fpool.md",
     "Go/简单框架实现/简单框架实现.md",
+    "Go/基础知识/_docs/GMP.md",
+    "数据库/关系型数据库/数据库系统概念/_docs/数据库系统概念.pdf",
     "操作系统/基础知识/_docs/并发/自旋锁.md",
     "操作系统/基础知识/_docs/并发/并发.md",
     "UML/UML用户指南.pdf",
@@ -212,7 +224,6 @@
     "操作系统/操作系统.md",
     "Go/简单框架实现/未命名.md",
     "Go/简单框架实现/_imgs",
-    "Go/简单框架实现/_imgs/GoroutinePool逻辑.png",
     "操作系统/基础知识/_imgs",
     "操作系统/基础知识/_docs/并发",
     "操作系统/基础知识/_docs",
@@ -220,32 +231,8 @@
     "README.md",
     "操作系统/并发",
     "操作系统/基础知识",
-    "Go/简单框架实现/_docs/Fpool.md",
-    "Go/基础知识/_imgs",
     "Go/基础知识/未命名.md",
-    "Go/基础知识/_imgs/GMP调度模型.png",
-    "Pasted image 20250410095107.png",
-    "Go/基础知识/基础知识.md",
     "算法/刷题日记/面试经典150题/25-04-10.md",
-    "算法/算法.md",
-    "3a92d5f34b2449b3e6dadeb8916fb47.jpg",
-    "032616dcae426c7491cd758a7ab1551.jpg",
-    "b31f56c9bcb09e67555ad134b542f66.jpg",
-    "数据库/关系型数据库/数据库系统概念/作业.md",
-    "f2130b549d1d2c6b1261a31da8fdc2f.jpg",
-    "数据库/关系型数据库/数据库系统概念/_docs/第7章 关系数据库设计.md",
-    "算法/刷题日记/面试经典150题/25-04-09.md",
-    "算法/刷题日记/面试经典150题/25-04-08.md",
-    "self/面经问题收集.md",
-    "self/Dashboard.md",
-    "分布式/面经/_docs/openFeign远程调用时，nacos宕机.md",
-    "分布式/面经/面经.md",
-    "self/草稿.md",
-    "数据库/关系型数据库/数据库系统概念/_docs/第6章 使用E-R模型的数据库设计.md",
-    "Pasted image 20250408153404.png",
-    "Pasted image 20250408153333.png",
-    "Pasted image 20250408153226.png",
-    "算法/刷题日记/面试经典150题/25-04-03.md",
     "设计模式/简单工厂模式.canvas"
   ]
 }
