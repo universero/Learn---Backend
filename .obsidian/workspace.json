@@ -4,24 +4,46 @@
     "type": "split",
     "children": [
       {
-        "id": "bff97c81d1f41c5b",
+        "id": "be8116d683251549",
         "type": "tabs",
         "children": [
           {
-            "id": "b68da4b23179cbfd",
+            "id": "95f293bcfa15ff34",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "self/简历准备.md",
+                "file": "Git/_docs/submodule.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "简历准备"
+              "title": "submodule"
+            }
+          },
+          {
+            "id": "657271d42e7da08e",
+            "type": "leaf",
+            "state": {
+              "type": "kanban",
+              "state": {
+                "file": "self/Dashboard.md",
+                "kanbanViewState": {
+                  "kanban-plugin": "board",
+                  "list-collapse": [
+                    false,
+                    false,
+                    false,
+                    false
+                  ]
+                }
+              },
+              "icon": "lucide-trello",
+              "title": "Dashboard"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -185,54 +207,54 @@
       "obsidian-kanban:创建新看板": false
     }
   },
-  "active": "a80a4cd21523dffc",
+  "active": "657271d42e7da08e",
   "lastOpenFiles": [
-    "self/草稿.md",
+    "Git/_docs/submodule.md",
+    "Git/Git.md",
+    "Git/_docs/hook.md",
+    "self/Dashboard.md",
+    "Git/_docs/reflog.md",
+    "Git/_docs/Git服务器.md",
     "self/简历准备.md",
-    "self/面经问题收集.md",
-    "数据库/Redis/_docs/Redis缓存设计.md",
-    "数据库/Redis/_docs/Redis集群.md",
-    "数据库/Redis/_docs/Redis优化.md",
-    "数据库/Redis/_docs/Redis线程模型.md",
-    "数据库/Redis/_docs/Redis数据类型与数据结构.md",
-    "数据库/Redis/_docs/Redis事务.md",
-    "数据库/Redis/_docs/Redis内存碎片.md",
-    "数据库/Redis/_docs/Redis过期删除与内存淘汰.md",
-    "数据库/Redis/_docs/Redis概述.md",
-    "数据库/Redis/_docs/Redis持久化.md",
-    "数据库/Redis/Redis.md",
-    "场景/常见认证.md",
-    "数据库/Redis/_imgs/Redis-fast.png",
-    "数据库/数据库.md",
-    "数据库/Redis/_imgs/Redis-多级主从节点.png",
-    "数据库/Redis/_imgs/缓存问题.png",
-    "算法/刷题日记/面试经典150题/25-04-16.md",
-    "数据库/Redis/_imgs/哨兵集群建立.png",
-    "数据库/Redis/_imgs/哨兵订阅内容.png",
-    "数据库/Redis/_imgs/Redis-主从故障转移.png",
-    "数据库/Redis/_imgs/Redis-主从复制-第一次同步.png",
-    "数据库/Redis/_imgs/Redis主从集群.png",
-    "数据库/Redis/_imgs/AOF重写.png",
-    "数据库/Redis/_imgs/AOF写入过程.png",
-    "Rust/基础/_docs/Cargo.md",
-    "算法/数据结构&算法/_docs/堆.md",
-    "算法/刷题日记/面试经典150题/25-04-15.md",
+    "Git/_docs/分支.md",
+    "Git分支创建.png",
     "算法/数据结构&算法/_docs/FenwickTree.md",
-    "算法/数据结构&算法/数据结构 & 算法.md",
-    "Rust/基础/Rust基础.md",
-    "Rust/基础/_docs",
-    "数据库/ElasticSearch/ElasticSearch.md",
-    "算法/算法.md",
-    "算法/数据结构&算法/_docs",
-    "数据结构&算法.md",
-    "算法/数据结构&算法",
-    "Rust/基础",
-    "Rust",
-    "数据库/Redis/未命名",
-    "数据库/关系型数据库/数据库系统概念/_docs/数据库系统概念.pdf",
-    "UML/UML用户指南.pdf",
-    "Go/简单框架实现/_imgs",
-    "操作系统/基础知识/_imgs",
+    "算法/数据结构&算法/_docs/堆.md",
+    "Git/_docs/基础.md",
+    "算法/刷题日记/热题100/25-04-22.md",
+    "Git/_imgs/文件状态生命周期.png",
+    "分布式/分布式锁/分布式锁.md",
+    "Git/_docs/概述.md",
+    "Git/_imgs/Git文件状态.png",
+    "Git/_imgs",
+    "Git/_imgs/Git对待数据方式.png",
+    "后端学习.md",
+    "Git/_docs",
+    "Git",
+    "操作系统/MIT-6.S081/3 - System Calls.md",
+    "操作系统/MIT-6.S081/2 - Xv6与Unix工具.md",
+    "操作系统/MIT-6.S081/1 - 概览与环境搭建.md",
+    "操作系统/MIT-6.S081/MIT-6.S081.md",
+    "self/面经问题收集.md",
+    "self/草稿.md",
+    "Go/基础知识/_docs/浮点数.md",
+    "self/傅琦浩_华东师范大学(1).pdf",
+    "Go/Go.md",
+    "Go/基础知识/_docs/字符串.md",
+    "Go/基础知识/_imgs/字符串共享底层数据.png",
+    "Go/基础知识/基础知识.md",
+    "Go/基础知识/_docs/复数.md",
+    "分布式/MIT6.824/_imgs",
+    "分布式/MIT6.824/_docs",
+    "分布式/MIT6.824",
+    "算法/刷题日记/热题100",
+    "数据库/Redis/_imgs/Redisson锁续期.png",
+    "分布式/分布式锁/_docs",
+    "分布式/分布式锁",
+    "Go/学习项目/looklook/_imgs/业务架构图.png",
+    "Go/学习项目/looklook/_imgs/技术架构图.png",
+    "数据库/Redis/_imgs/Redis-fast.png",
+    "数据库/Redis/_imgs/Redis-多级主从节点.png",
     "设计模式/简单工厂模式.canvas"
   ]
 }

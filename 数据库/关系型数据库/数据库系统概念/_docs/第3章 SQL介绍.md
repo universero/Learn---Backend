@@ -24,16 +24,16 @@ create table r
 	<完整性约束1>,
 	<完整性约束2>);
 ```
-	- 完整性约束
-		- 主键：primary key(A1,...) 罗列的属性构成主键，需要唯一且非空
-		- 外键：foreign key(A1,...) references s 指定属性需要是s的主键
-		- 非空：不允许包含空值
-		- 默认值：default <表达式>
-		- ...
-	- drop table r：删除所有的元组和模式
-	- delete table r：删除所有的元组
-	- alter table r add A D：添加属性
-	- alter table r drop A：删除属性
+- 完整性约束
+	- 主键：primary key(A1,...) 罗列的属性构成主键，需要唯一且非空
+	- 外键：foreign key(A1,...) references s 指定属性需要是s的主键
+	- 非空：不允许包含空值
+	- 默认值：default <表达式>
+	- ...
+- drop table r：删除所有的元组和模式
+- delete table r：删除所有的元组
+- alter table r add A D：添加属性
+- alter table r drop A：删除属性
 ## SQL查询结构
 
 > [[数据库系统概念.pdf#page=76&selection=264,0,266,7|SQL查询的基本结构]]
@@ -160,7 +160,7 @@ SQL提供五个标准聚集函数
 
 - 删除
 	- 只能删除元组，不能删除属性上某些值
-	- delete from r wher p
+	- delete from r where p
 - 插入
 	- insert into r(A1,A2,A3) values (a1,a2,a2) 插入一个元组
 	- 元组属性值排列与对应属性排列一致时可以省略属性
