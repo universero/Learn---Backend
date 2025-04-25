@@ -4,42 +4,31 @@
     "type": "split",
     "children": [
       {
-        "id": "be8116d683251549",
+        "id": "4b5af6b6905e1b52",
         "type": "tabs",
         "children": [
           {
-            "id": "95f293bcfa15ff34",
+            "id": "16c30551c4d3af6e",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Git/_docs/submodule.md",
-                "mode": "source",
-                "source": false
+                "file": "操作系统/MIT-6.S081/_imgs/释放共享页.png"
               },
-              "icon": "lucide-file",
-              "title": "submodule"
+              "icon": "lucide-image",
+              "title": "释放共享页"
             }
           },
           {
-            "id": "657271d42e7da08e",
+            "id": "f90305c507a1ebef",
             "type": "leaf",
             "state": {
-              "type": "kanban",
+              "type": "image",
               "state": {
-                "file": "self/Dashboard.md",
-                "kanbanViewState": {
-                  "kanban-plugin": "board",
-                  "list-collapse": [
-                    false,
-                    false,
-                    false,
-                    false
-                  ]
-                }
+                "file": "操作系统/MIT-6.S081/_imgs/xv6内存映射.png"
               },
-              "icon": "lucide-trello",
-              "title": "Dashboard"
+              "icon": "lucide-image",
+              "title": "xv6内存映射"
             }
           }
         ],
@@ -85,7 +74,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "heap",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -207,54 +196,53 @@
       "obsidian-kanban:创建新看板": false
     }
   },
-  "active": "657271d42e7da08e",
+  "active": "a80a4cd21523dffc",
   "lastOpenFiles": [
+    "操作系统/MIT-6.S081/_imgs/分配共享页.png",
+    "操作系统/MIT-6.S081/_imgs/释放共享页.png",
+    "操作系统/MIT-6.S081/_imgs/用户内存layout.png",
+    "操作系统/MIT-6.S081/4 - Pagetable.md",
+    "操作系统/MIT-6.S081/_imgs/pageaccess.png",
+    "操作系统/MIT-6.S081/_imgs/PTE_A.png",
+    "操作系统/MIT-6.S081/_imgs/vmprint.png",
+    "操作系统/MIT-6.S081/_imgs/移除共享页映射.png",
+    "操作系统/MIT-6.S081/_imgs/map共享页.png",
+    "操作系统/MIT-6.S081/1 - 概览与环境搭建.md",
+    "操作系统/MIT-6.S081/book-riscv.pdf",
+    "算法/刷题日记/热题100/25-04-25.md",
+    "操作系统/MIT-6.S081/_imgs/xv6内存映射.png",
+    "pagetable.pdf",
+    "操作系统/MIT-6.S081/_imgs/c_freemem.png",
+    "算法/刷题日记/热题100/25-04-24.md",
+    "self/草稿.md",
+    "数据库/关系型数据库/数据库系统概念/_docs/第2章 关系模型介绍.md",
+    "数据库/关系型数据库/数据库系统概念/_docs/第1章 引言.md",
+    "数据库/关系型数据库/数据库系统概念/数据库系统概念.md",
+    "算法/数据结构&算法/_docs/堆.md",
+    "算法/刷题日记/面试经典150题/25-04-13.md",
+    "算法/刷题日记/热题100/25-04-23.md",
+    "操作系统/MIT-6.S081/3 - System Calls.md",
+    "操作系统/MIT-6.S081/2 - Xv6与Unix工具.md",
     "Git/_docs/submodule.md",
+    "self/Dashboard.md",
     "Git/Git.md",
     "Git/_docs/hook.md",
-    "self/Dashboard.md",
     "Git/_docs/reflog.md",
     "Git/_docs/Git服务器.md",
     "self/简历准备.md",
     "Git/_docs/分支.md",
-    "Git分支创建.png",
     "算法/数据结构&算法/_docs/FenwickTree.md",
-    "算法/数据结构&算法/_docs/堆.md",
     "Git/_docs/基础.md",
     "算法/刷题日记/热题100/25-04-22.md",
-    "Git/_imgs/文件状态生命周期.png",
     "分布式/分布式锁/分布式锁.md",
-    "Git/_docs/概述.md",
-    "Git/_imgs/Git文件状态.png",
     "Git/_imgs",
-    "Git/_imgs/Git对待数据方式.png",
-    "后端学习.md",
     "Git/_docs",
     "Git",
-    "操作系统/MIT-6.S081/3 - System Calls.md",
-    "操作系统/MIT-6.S081/2 - Xv6与Unix工具.md",
-    "操作系统/MIT-6.S081/1 - 概览与环境搭建.md",
-    "操作系统/MIT-6.S081/MIT-6.S081.md",
-    "self/面经问题收集.md",
-    "self/草稿.md",
-    "Go/基础知识/_docs/浮点数.md",
     "self/傅琦浩_华东师范大学(1).pdf",
-    "Go/Go.md",
-    "Go/基础知识/_docs/字符串.md",
-    "Go/基础知识/_imgs/字符串共享底层数据.png",
-    "Go/基础知识/基础知识.md",
-    "Go/基础知识/_docs/复数.md",
     "分布式/MIT6.824/_imgs",
     "分布式/MIT6.824/_docs",
     "分布式/MIT6.824",
     "算法/刷题日记/热题100",
-    "数据库/Redis/_imgs/Redisson锁续期.png",
-    "分布式/分布式锁/_docs",
-    "分布式/分布式锁",
-    "Go/学习项目/looklook/_imgs/业务架构图.png",
-    "Go/学习项目/looklook/_imgs/技术架构图.png",
-    "数据库/Redis/_imgs/Redis-fast.png",
-    "数据库/Redis/_imgs/Redis-多级主从节点.png",
     "设计模式/简单工厂模式.canvas"
   ]
 }
