@@ -4,35 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "4b5af6b6905e1b52",
+        "id": "505a83c82b46957e",
         "type": "tabs",
         "children": [
           {
-            "id": "16c30551c4d3af6e",
+            "id": "4183d1132a80715f",
             "type": "leaf",
             "state": {
               "type": "image",
               "state": {
-                "file": "操作系统/MIT-6.S081/_imgs/释放共享页.png"
+                "file": "操作系统/MIT-6.S081/_imgs/RSIC-V的C类型.png"
               },
               "icon": "lucide-image",
-              "title": "释放共享页"
-            }
-          },
-          {
-            "id": "f90305c507a1ebef",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "操作系统/MIT-6.S081/_imgs/xv6内存映射.png"
-              },
-              "icon": "lucide-image",
-              "title": "xv6内存映射"
+              "title": "RSIC-V的C类型"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -198,21 +185,23 @@
   },
   "active": "a80a4cd21523dffc",
   "lastOpenFiles": [
+    "操作系统/MIT-6.S081/5 - traps.md",
+    "操作系统/MIT-6.S081/book-riscv.pdf",
+    "操作系统/MIT-6.S081/4 - Pagetable.md",
+    "操作系统/MIT-6.S081/_imgs/stackframe.png",
+    "操作系统/MIT-6.S081/_imgs/RSIC-V的C类型.png",
+    "操作系统/MIT-6.S081/_imgs/RSIC-V中的寄存器.png",
+    "操作系统/MIT-6.S081/1 - 概览与环境搭建.md",
+    "算法/刷题日记/热题100/25-04-26.md",
+    "操作系统/MIT-6.S081/_imgs/xv6内存映射.png",
     "操作系统/MIT-6.S081/_imgs/分配共享页.png",
     "操作系统/MIT-6.S081/_imgs/释放共享页.png",
     "操作系统/MIT-6.S081/_imgs/用户内存layout.png",
-    "操作系统/MIT-6.S081/4 - Pagetable.md",
     "操作系统/MIT-6.S081/_imgs/pageaccess.png",
     "操作系统/MIT-6.S081/_imgs/PTE_A.png",
     "操作系统/MIT-6.S081/_imgs/vmprint.png",
-    "操作系统/MIT-6.S081/_imgs/移除共享页映射.png",
-    "操作系统/MIT-6.S081/_imgs/map共享页.png",
-    "操作系统/MIT-6.S081/1 - 概览与环境搭建.md",
-    "操作系统/MIT-6.S081/book-riscv.pdf",
     "算法/刷题日记/热题100/25-04-25.md",
-    "操作系统/MIT-6.S081/_imgs/xv6内存映射.png",
     "pagetable.pdf",
-    "操作系统/MIT-6.S081/_imgs/c_freemem.png",
     "算法/刷题日记/热题100/25-04-24.md",
     "self/草稿.md",
     "数据库/关系型数据库/数据库系统概念/_docs/第2章 关系模型介绍.md",
@@ -233,8 +222,6 @@
     "Git/_docs/分支.md",
     "算法/数据结构&算法/_docs/FenwickTree.md",
     "Git/_docs/基础.md",
-    "算法/刷题日记/热题100/25-04-22.md",
-    "分布式/分布式锁/分布式锁.md",
     "Git/_imgs",
     "Git/_docs",
     "Git",
