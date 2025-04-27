@@ -4,19 +4,45 @@
     "type": "split",
     "children": [
       {
-        "id": "505a83c82b46957e",
+        "id": "b517a934b7af072e",
         "type": "tabs",
         "children": [
           {
-            "id": "4183d1132a80715f",
+            "id": "77309f11dfe8ada9",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "操作系统/MIT-6.S081/_imgs/RSIC-V的C类型.png"
+                "file": "操作系统/MIT-6.S081/5 - traps.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "RSIC-V的C类型"
+              "icon": "lucide-file",
+              "title": "5 - traps"
+            }
+          },
+          {
+            "id": "dc26594155e04926",
+            "type": "leaf",
+            "state": {
+              "type": "surfing-view",
+              "state": {
+                "url": "https://pdos.csail.mit.edu/6.828/2021/lec/l-riscv-slides.pdf"
+              },
+              "icon": "lucide-file",
+              "title": "2020-09-19-Note-16-03.xopp"
+            }
+          },
+          {
+            "id": "a2a93ee7fa1fe76e",
+            "type": "leaf",
+            "state": {
+              "type": "surfing-view",
+              "state": {
+                "url": "https://yuanbao.tencent.com/chat/naQivTmsDa/e35c24ef-a6cc-43ec-9583-acdc6a72f43d"
+              },
+              "icon": "lucide-file",
+              "title": "腾讯元宝 - 轻松工作 多点生活"
             }
           }
         ]
@@ -183,23 +209,27 @@
       "obsidian-kanban:创建新看板": false
     }
   },
-  "active": "a80a4cd21523dffc",
+  "active": "77309f11dfe8ada9",
   "lastOpenFiles": [
     "操作系统/MIT-6.S081/5 - traps.md",
+    "stack-layout.png",
+    "操作系统/MIT-6.S081/1 - 概览与环境搭建.md",
+    "数据库/关系型数据库/mysql/_docs/索引.md",
+    "数据库/关系型数据库/mysql/mysql八股.md",
+    "数据库/关系型数据库/mysql/_docs/记录存储.md",
+    "compact格式.png",
+    "算法/刷题日记/热题100/25-04-27.md",
+    "操作系统/MIT-6.S081/_imgs/RSIC-V的C类型.png",
     "操作系统/MIT-6.S081/book-riscv.pdf",
     "操作系统/MIT-6.S081/4 - Pagetable.md",
     "操作系统/MIT-6.S081/_imgs/stackframe.png",
-    "操作系统/MIT-6.S081/_imgs/RSIC-V的C类型.png",
     "操作系统/MIT-6.S081/_imgs/RSIC-V中的寄存器.png",
-    "操作系统/MIT-6.S081/1 - 概览与环境搭建.md",
     "算法/刷题日记/热题100/25-04-26.md",
     "操作系统/MIT-6.S081/_imgs/xv6内存映射.png",
     "操作系统/MIT-6.S081/_imgs/分配共享页.png",
     "操作系统/MIT-6.S081/_imgs/释放共享页.png",
     "操作系统/MIT-6.S081/_imgs/用户内存layout.png",
     "操作系统/MIT-6.S081/_imgs/pageaccess.png",
-    "操作系统/MIT-6.S081/_imgs/PTE_A.png",
-    "操作系统/MIT-6.S081/_imgs/vmprint.png",
     "算法/刷题日记/热题100/25-04-25.md",
     "pagetable.pdf",
     "算法/刷题日记/热题100/25-04-24.md",
@@ -218,10 +248,6 @@
     "Git/_docs/hook.md",
     "Git/_docs/reflog.md",
     "Git/_docs/Git服务器.md",
-    "self/简历准备.md",
-    "Git/_docs/分支.md",
-    "算法/数据结构&算法/_docs/FenwickTree.md",
-    "Git/_docs/基础.md",
     "Git/_imgs",
     "Git/_docs",
     "Git",
