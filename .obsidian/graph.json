@@ -120,7 +120,7 @@
       }
     },
     {
-      "query": "path: Rust  ",
+      "query": "path: Rust  path:Rust  ",
       "color": {
         "a": 1,
         "rgb": 15557425
@@ -144,6 +144,6 @@
   "repelStrength": 16.8585105198709,
   "linkStrength": 1,
   "linkDistance": 200,
-  "scale": 0.39753617815347453,
-  "close": false
+  "scale": 0.5411701236795964,
+  "close": true
 }

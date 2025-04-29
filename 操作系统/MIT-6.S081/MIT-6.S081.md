@@ -19,3 +19,7 @@ ___
 ### [[2 - Xv6与Unix工具 | Xv6 & Unix utilities]]
 
 ### [[3 - System Calls|System Calls]]
+
+### [[4 - Pagetable | Page table]]
+### [[5 - traps | traps]]
+### [[6 - Copy-on-Write Fork for xv6|Copy On Write Fork]]

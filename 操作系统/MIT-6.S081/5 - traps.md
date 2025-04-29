@@ -214,6 +214,8 @@ xv6分配一个完整的page存储栈, return addr和prev fram相对于栈指针
 - 在defs.h中完善backtrace的定义, 向sys_sleep中插入这个函数的调用
 - 在riscv.h中添加r_fp函数来获取当前栈地址
 - 栈的内存分布![[stack-layout.png]]
+- 唯一需要注意的是从一个地址处取出值时, 需要先将这个地址转型成指针然后再取值, 其余的都很简单
+![[backtrace.png]]
 
 ### Alarm (hard)
 
@@ -287,3 +289,42 @@ Some hints:
 - Have usertrap save enough state in struct proc when the timer goes off that sigreturn can correctly return to the interrupted user code.
 - Prevent re-entrant calls to the handler----if a handler hasn't returned yet, the kernel shouldn't call it again. test2 tests this.
 Once you pass test0, test1, and test2 run usertests to make sure you didn't break any other parts of the kernel.
+
+#### 分析
+
+需要实现的功能
+- 添加一个系统调用sigalarm(interval, handler), 作用是程序使用了interval个ticks CPU时间后, 内核需要调用函数handler, 当handler结束后, 程序回到调用前的状态. 类似于trap, 只不过是处理函数是定义在用户空间的
+- 如果参数是0,0 , 内核需要停止产生周期性的alarm调用
+- 需要能通过alarmtest和usertests
+- 在proc.h中增加存储interval, handler以及距离上次过去多长ticks的字段, 在allocproc中初始化字段
+- 每个tick, 硬件都会强制触发中断, 然后在usertrap()中处理, 此时which_dev\==2
+- 修改usertrap, 当interval达到时, 执行handler
+- handler中必须调用sigreturn, 通过修改sys_sigreturn和usertrap来实现正确恢复
+
+具体步骤
+- test 0
+	- 将alarmtest.c添加到Makefile中
+	- 将sigalarm和sigreturn的定义添加到user.h中
+	- 更新usys.pl, kernel/syscall.h以及kernel/syscall.c来添加上述两个的系统调用
+	- sys_sigreturn暂时只需要返回0
+- test 1/2: resume interrupted code
+	- 寄存器的内容需要被保存,  中断结束后再恢复
+	- 需要重置alarm counter再每次调用后, 然后可以周期性调用
+
+#### 分析
+
+函数定义等前面的实验都做过了, 这里不予赘述
+
+对于test0, 我们需要实现的是能够成功的执行handler
+对于系统调用sys_sigalarm, 我们做的事情非常简单, 只需要将传入的alarm配置存储到proc的字段中即可
+![[sigalarm.png]]
+核心是修改usertrap, 根据提示, 我们需要做的是在which_dev=2时添加调用handler的逻辑, 已经ticks的管理逻辑
+ticks的管理非常简单, 每一次触发就将passed+1, 然后调用了handler就将passed清零, 实现周期性调用
+而调用handler, 我们第一时间想到的肯定是调用这个函数, 也就是利用p->handler中存储的函数指针来调用. 但是这里有一个很容易被忽略的问题, 执行trap时, 整体处于内核态, 使用的是kernel的页表, 直接调用是找不到这个函数的, 只能通过间接的方式来实现调用. 阅读usertrap的代码, 很容易发现, trap结束后用户程序继续的位置是由trapframe中的epc决定的, 在usertrapret中, 会将sepc寄存器设置为trapframe中的epc的值, 然后用户空间从这个位置开始继续执行, 所以这里直接将epc的值改为handler的地址就可以了
+
+在test0中, 我们成功实现了调用handler, 但是目前的实现方式是破坏性的, 原本保存的pc值被覆盖了, 没法重新回到原来的位置执行. 注意到每一个handler中必须调用sigreturn, 很明显, 这个系统调用的作用就是重新回到原来应该在的位置. 
+提示里要求保存需要的寄存器, 这里我换了个思考的方式, 加入没有新的这个feature, 所有的状态都存在trapframe中, 然后usertrapret. 如果我们要回到这个状态的话, 只需要用一个页来存调用handler前的trapframe即可, 作为副本在执行sigreturn的时候再拷贝回来就行.
+于是在proc.c中初始化进程和释放进程时都额外管理一个usertrapframe用作副本
+test2要求, 在handler返回前不可重入, 第一想法是锁, 但是想了想发现这个不可重入是为了避免当个进程多次调用handler导致先前的状态被覆盖了, 不存在多个进程的竞态条件没必要用锁. 前面用到了usertrapframe, 那么正好可以利用一下这个, 如果这个副本是空的, 说明没有调用过handler或者已经结束了, 而不为空则不行. 怎么判断是否为空呢? trapframe里存了一些和内核相关的字段, 如内核页表, 选一个不可能是0的作为条件即可. 不过要记得每次sigreturn和proc初始化时需要将usertrapframe设置为全空
+![[test1.png]]
+![[sigreturn.png]]

@@ -4,45 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "b517a934b7af072e",
+        "id": "2ce8222703159ebd",
         "type": "tabs",
         "children": [
           {
-            "id": "77309f11dfe8ada9",
+            "id": "0cb7f5de52083ea1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "操作系统/MIT-6.S081/5 - traps.md",
+                "file": "操作系统/MIT-6.S081/6 - Copy-on-Write Fork for xv6.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "5 - traps"
+              "title": "6 - Copy-on-Write Fork for xv6"
             }
           },
           {
-            "id": "dc26594155e04926",
+            "id": "371a69edb9e73486",
             "type": "leaf",
             "state": {
-              "type": "surfing-view",
+              "type": "markdown",
               "state": {
-                "url": "https://pdos.csail.mit.edu/6.828/2021/lec/l-riscv-slides.pdf"
+                "file": "self/简历准备.md",
+                "mode": "source",
+                "source": false
               },
               "icon": "lucide-file",
-              "title": "2020-09-19-Note-16-03.xopp"
-            }
-          },
-          {
-            "id": "a2a93ee7fa1fe76e",
-            "type": "leaf",
-            "state": {
-              "type": "surfing-view",
-              "state": {
-                "url": "https://yuanbao.tencent.com/chat/naQivTmsDa/e35c24ef-a6cc-43ec-9583-acdc6a72f43d"
-              },
-              "icon": "lucide-file",
-              "title": "腾讯元宝 - 轻松工作 多点生活"
+              "title": "简历准备"
             }
           }
         ]
@@ -209,53 +199,54 @@
       "obsidian-kanban:创建新看板": false
     }
   },
-  "active": "77309f11dfe8ada9",
+  "active": "0cb7f5de52083ea1",
   "lastOpenFiles": [
-    "操作系统/MIT-6.S081/5 - traps.md",
-    "stack-layout.png",
-    "操作系统/MIT-6.S081/1 - 概览与环境搭建.md",
+    "lazy.png",
+    "pagefaulthandler.png",
+    "Pasted image 20250429232622.png",
+    "sbrk.png",
+    "运维/Linux/_docs/lsof.md",
+    "self/简历准备.md",
+    "运维/Linux/Linux.md",
+    "运维/Linux/_docs/top.md",
+    "后端学习.md",
+    "运维/Linux/_imgs",
+    "运维/Linux/_docs",
+    "运维/Linux",
     "数据库/关系型数据库/mysql/_docs/索引.md",
     "数据库/关系型数据库/mysql/mysql八股.md",
     "数据库/关系型数据库/mysql/_docs/记录存储.md",
-    "compact格式.png",
-    "算法/刷题日记/热题100/25-04-27.md",
-    "操作系统/MIT-6.S081/_imgs/RSIC-V的C类型.png",
+    "数据库/数据库.md",
+    "数据库/关系型数据库/_imgs/InnoDB页结构.png",
+    "Rust/基础/_docs/Cargo.md",
+    "操作系统/MIT-6.S081/_imgs/写时复制.png",
+    "算法/刷题日记/刷题日记.md",
+    "操作系统/基础知识/基础知识.md",
+    "操作系统/MIT-6.S081/MIT-6.S081.md",
+    "算法/刷题日记/热题100/25-04-29.md",
+    "操作系统/MIT-6.S081/6 - Copy-on-Write Fork for xv6.md",
+    "操作系统/MIT-6.S081/_imgs/cow页判断.png",
+    "操作系统/MIT-6.S081/_imgs/页表拷贝.png",
+    "操作系统/MIT-6.S081/_imgs/count.png",
+    "self/傅琦浩_华东师范大学(1).pdf",
+    "操作系统/MIT-6.S081/_imgs/SCAUSE.png",
     "操作系统/MIT-6.S081/book-riscv.pdf",
+    "操作系统/MIT-6.S081/5 - traps.md",
+    "操作系统/MIT-6.S081/_imgs/sigreturn.png",
     "操作系统/MIT-6.S081/4 - Pagetable.md",
-    "操作系统/MIT-6.S081/_imgs/stackframe.png",
-    "操作系统/MIT-6.S081/_imgs/RSIC-V中的寄存器.png",
+    "算法/刷题日记/热题100/25-04-28.md",
+    "操作系统/MIT-6.S081/1 - 概览与环境搭建.md",
+    "算法/刷题日记/热题100/25-04-27.md",
     "算法/刷题日记/热题100/25-04-26.md",
-    "操作系统/MIT-6.S081/_imgs/xv6内存映射.png",
-    "操作系统/MIT-6.S081/_imgs/分配共享页.png",
-    "操作系统/MIT-6.S081/_imgs/释放共享页.png",
-    "操作系统/MIT-6.S081/_imgs/用户内存layout.png",
-    "操作系统/MIT-6.S081/_imgs/pageaccess.png",
     "算法/刷题日记/热题100/25-04-25.md",
     "pagetable.pdf",
     "算法/刷题日记/热题100/25-04-24.md",
     "self/草稿.md",
     "数据库/关系型数据库/数据库系统概念/_docs/第2章 关系模型介绍.md",
-    "数据库/关系型数据库/数据库系统概念/_docs/第1章 引言.md",
-    "数据库/关系型数据库/数据库系统概念/数据库系统概念.md",
-    "算法/数据结构&算法/_docs/堆.md",
-    "算法/刷题日记/面试经典150题/25-04-13.md",
-    "算法/刷题日记/热题100/25-04-23.md",
-    "操作系统/MIT-6.S081/3 - System Calls.md",
-    "操作系统/MIT-6.S081/2 - Xv6与Unix工具.md",
-    "Git/_docs/submodule.md",
-    "self/Dashboard.md",
-    "Git/Git.md",
-    "Git/_docs/hook.md",
-    "Git/_docs/reflog.md",
-    "Git/_docs/Git服务器.md",
     "Git/_imgs",
     "Git/_docs",
     "Git",
-    "self/傅琦浩_华东师范大学(1).pdf",
     "分布式/MIT6.824/_imgs",
-    "分布式/MIT6.824/_docs",
-    "分布式/MIT6.824",
-    "算法/刷题日记/热题100",
     "设计模式/简单工厂模式.canvas"
   ]
 }
