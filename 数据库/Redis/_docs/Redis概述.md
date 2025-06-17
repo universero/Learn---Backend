@@ -9,7 +9,7 @@ Redis的性能高，单机QPS是MySQL的十倍，单机QPS轻松破10w，而MySQ
 
 ## Redis为什么快
 
-![[Redis-fast.png]]
+![Redis-fast](../_imgs/Redis-fast.png)
 ## Redis 和 Memcached 的区别
 
 - 共同点:

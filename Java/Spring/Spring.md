@@ -1,1 +1,1 @@
-## [[AOP]]
+## [AOP](_docs/AOP.md)

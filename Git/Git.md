@@ -1,16 +1,16 @@
 > [Git 官方文档](https://git-scm.com/book/zh/v2)
 ___
 
-## [[Git/_docs/概述]]
+## [概述](_docs/概述.md)
 
-## [[基础]]
+## [基础](_docs/基础.md)
 
-## [[分支]]
+## [分支](_docs/分支.md)
 
-## [[Git服务器]]
+## [Git服务器](_docs/Git服务器.md)
 
-## [[reflog]]
+## [reflog](_docs/reflog.md)
 
-## [[hook]]
+## [hook](_docs/hook.md)
 
-## [[submodule]]
+## [submodule](_docs/submodule.md)

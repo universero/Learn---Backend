@@ -4,7 +4,7 @@ ___
 
 Monstache 是一个用 Go 语言编写的同步工具，用来将 MongoDB 中的数据同步到 Elasticsearch 中，支持全量同步、增量同步，提供丰富的配置参数并支持使用 Go、JavaScript 编写插件来自定义处理数据的逻辑。
 
-![[monstache工作流程.png]]
+![monstache工作流程](../_imgs/monstache工作流程.png)
 ### 全量同步
 
 直接读取MongoDB中指定表的全部数据并写入到es中, 常用配置参数为 `direct-read-namespaces`、`direct-read-concur`、`direct-read-split-max`、`direct-read-stateful`，分别指定全量同步哪些表、同时同步的表的数量、每张表切分的最大次数、是否保存同步状态。

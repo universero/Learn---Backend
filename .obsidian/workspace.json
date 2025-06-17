@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "fb97f872fecc891f",
+        "id": "ce62f345a1831cc5",
         "type": "tabs",
         "children": [
           {
-            "id": "9d3eda048e51f4ae",
+            "id": "9b663a907a2c11e5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "操作系统/MIT-6.S081/3 - System Calls.md",
+                "file": "杂谈/杂谈.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "3 - System Calls"
+              "title": "杂谈"
             }
           }
         ]
@@ -185,8 +185,15 @@
       "obsidian-kanban:创建新看板": false
     }
   },
-  "active": "9d3eda048e51f4ae",
+  "active": "9b663a907a2c11e5",
   "lastOpenFiles": [
+    "杂谈/Bugs/Bugs.md",
+    "杂谈/杂谈.md",
+    "杂谈/Bugs/_docs/25-02-22 ownerpro：mysql认证插件.md",
+    "分布式/MIT6.824/MIT6.824.md",
+    "场景/_docs/常见认证.md",
+    "场景/场景.md",
+    "操作系统/MIT-6.S081/3 - System Calls.md",
     "操作系统/MIT-6.S081/2 - Xv6与Unix工具.md",
     "操作系统/操作系统.md",
     "操作系统/基础知识/基础知识.md",
@@ -199,7 +206,6 @@
     "Go/kitex/_docs/概述.md",
     "Go/kitex/kitex.md",
     "Go/kitex/_imgs/Kitex架构设计.png",
-    "场景/场景.md",
     "场景/_docs",
     "_post/AI/MCP/_docs/核心架构.md",
     "_post/AI/MCP/_docs/Transports.md",
@@ -211,17 +217,11 @@
     "_post/AI/MCP/_docs",
     "_post/AI/MCP/MCP.md",
     "_post/AI/MCP",
-    "_post/AI/AI.md",
     "_post/基本架构.png",
     "_post/AI",
     "_post",
     "_config.yaml",
     "新建 文本文档.txt",
-    "运维/Linux/Linux.md",
-    "运维/Linux/_docs/ssh反向通道实现远程机器访问本地代理.md",
-    "AI/MCP/_docs/Transports.md",
-    "AI/MCP/MCP.md",
-    "AI/MCP/_docs/Roots.md",
     "AI/MCP/_docs",
     "Pasted image 20250612081810.png",
     "AI/MCP/_imgs/基本架构.png",

@@ -2,14 +2,14 @@ ___
 ## 键值对数据库是如何实现的
 
 Redis使用一个哈希表存储所有的键值对, 哈希桶中存储的是指向键值对value的指针(dictEnrty*), 键值对的数据结构中并不是直接保存值本身，而是保存了 void * key 和 void * value 指针，分别指向了实际的键对象和值对象
-![[Redis-键值对存储.png]]
+![Redis-键值对存储](../_imgs/Redis-键值对存储.png)
 - redisDb 结构，表示 Redis 数据库的结构，结构体里存放了指向了 dict 结构的指针；
 - dict 结构，结构体里存放了 2 个哈希表，正常情况下都是用「哈希表1」，「哈希表2」只有在 rehash 的时候才用，具体什么是 rehash，本文的哈希表数据结构会讲；
 - ditctht 结构，表示哈希表的结构，结构里存放了哈希表数组，数组中的每个元素都是指向一个哈希表节点结构（dictEntry）的指针；
 - dictEntry 结构，表示哈希表节点的结构，结构里存放了 void \*key 和 void \*value 指针， key 指向的是 String 对象，而 value 则可以指向 String 对象，也可以指向集合类型的对象，比如 List 对象、Hash 对象、Set 对象和 Zset 对象。
 
 void * key 和 void * value 指针指向的是 Redis 对象，Redis 中的每个对象都由 redisObject 结构表示，如下图：
-![[Redis-对象结构.png]]
+![Redis-对象结构](../_imgs/Redis-对象结构.png)
 - type，标识该对象是什么类型的对象（String 对象、 List 对象、Hash 对象、Set 对象和 Zset 对象）；
 - encoding，标识该对象使用了哪种底层的数据结构；
 - **ptr，指向底层数据结构的指针**。
@@ -23,7 +23,7 @@ void * key 和 void * value 指针指向的是 Redis 对象，Redis 中的每个
 | Set    | 包含字符串的无序集合      | 字符串的集合，查找、获取、添加、删除外还能计算交集、并集、差集         |
 | Hash   | 包含键值对的无序散列表     | 添加、获取、删除单个元素                            |
 | Zset   | 和散列一样，存储简直对     | 字符串成员与浮点数分数之间的有序映射；元素排列顺序由分数大小决定；       |
-![[Redis-数据类型.png]]
+![Redis-数据类型](../_imgs/Redis-数据类型.png)
 ## String
 
 最基本的key-value结构, key时唯一标识, value是值, 最多可容纳数据为512M
@@ -36,7 +36,7 @@ void * key 和 void * value 指针指向的是 Redis 对象，Redis 中的每个
 	- 获取字符串长度时间复杂度高, 拼接字符串效率也低
 	- 不记录本身的缓冲区大小, 容易造成溢出, 不安全
 - SDS数据结构
-	- ![[Redis-SDS数据结构.png]]
+	- ![Redis-SDS数据结构](../_imgs/Redis-SDS数据结构.png)
 	- **len，记录了字符串长度**。这样获取字符串长度的时候，只需要返回这个成员变量值就行，时间复杂度只需要 O（1）。
 	- **alloc，分配给字符数组的空间长度**。这样在修改字符串的时候，可以通过 `alloc - len` 计算出剩余的空间大小，可以用来判断空间是否满足修改需求，如果不满足的话，就会自动将 SDS 的空间扩展至执行修改所需的大小，然后才执行实际的修改操作，所以使用 SDS 既不需要手动修改 SDS 的空间大小，也不会出现前面所说的缓冲区溢出的问题。
 	- **flags，用来表示不同类型的 SDS**。一共设计了 5 种类型，分别是 sdshdr5、sdshdr8、sdshdr16、sdshdr32 和 sdshdr64，后面在说明区别之处。
@@ -75,16 +75,16 @@ hisds hi_sdsMakeRoomFor(hisds s, size_t addlen)
 
 string编码方式有三种int, raw, embstr
 
-![[string结构 1.webp]]
+![string结构 1](../_imgs/string结构%201.webp)
 
 - int: 若存储整数值, 且可以用long表示, 数据会存在字符串对象结构的ptr中
-	- ![[string-int.png]]
+	- ![string-int](../_imgs/string-int.png)
 -  embstr: 若存储较短的字符串(不同版本边界不一致), 字符串对象将使用一个简单动态字符串SDS来保存. 一次内存分配函数分配一块连续的内存空间来保存redisObject和SDS.
 	- 优势: 减少内存分配次数和释放次数. 空间局部性, 提升缓存性能
 	- 缺点: embstr实际上是只读的, 长度增加时需要重新分配内存.所以修改时都是先转换成raw, 再执行修改
-	- ![[embstr.webp]]
+	- ![embstr](../_imgs/embstr.webp)
 - raw: 若存储较长字符串, prt指向一个SDS
-	- ![[raw.webp]]
+	- ![raw](../_imgs/raw.webp)
 ### 常用命令
 ```shell
 -- 普通字符串操作
@@ -165,7 +165,7 @@ end
 
 #### 双端链表 linkedlist
 
-![[Redis-双向链表.png]]
+![Redis-双向链表](../_imgs/Redis-双向链表.png)
 
 ```c
 typedef struct listNode {
@@ -203,7 +203,7 @@ typedef struct list {
 #### 压缩列表 ziplist
 
 连续内存块组成的顺序型数据结构
-![[Redis-ziplist.png]]
+![Redis-ziplist](../_imgs/Redis-ziplist.png)
 - zlbytes，占用 4 个字节，记录了整个 ziplist 占用的总字节数。
 - zltail，占用 4 个字节，指向最后一个 entry 偏移量，用于快速定位最后一个 entry。
 - zllen，占用 2 字节，记录 entry 总数。
@@ -211,7 +211,7 @@ typedef struct list {
 - zlend，ziplist 结束标志，占用 1 字节，值等于 255。
 查找首尾元素时均为O(1), 查找中间元素是为O(n)
 
-![[Redis-ziplist-entry.png]]
+![Redis-ziplist-entry](../_imgs/Redis-ziplist-entry.png)
 - prevlen:记录前一个 entry 占用字节数，能实现逆序遍历就是靠这个字段确定往前移动多少字节拿到上一个 entry 首地址。
 	这部分会根据上一个 entry 的长度进行变长编码（为了节省内存操碎了心），变长方式如下。
 	- 前一个 entry 的字节大小小于 254（255 用于 zlend），prevlen 长度为 1 字节，值等于上一个 entry 的长度。
@@ -256,7 +256,7 @@ typedef struct quicklistNode {
     ....
 } quicklistNode;
 ```
-![[Redis-quicklist.png]]
+![Redis-quicklist](../_imgs/Redis-quicklist.png)
 - 优化的关键是每个节点的大小, 过小的话退化成linkedlist, 碎片多, 过大的话退化成ziplist, 连续更新问题
 - 添加元素时, 不直接创建节点, 而是判断添加位置的压缩列表是否有空余
 - 没有完全解决连锁更新问题
@@ -265,7 +265,7 @@ typedef struct quicklistNode {
 代替ziplist, 不在包含前一个节点的长度
 
 仍然使用连续的内存空间保存数据, 不同大小数据使用不同的编码方式
-![[listpack.png]]
+![listpack](../_imgs/listpack.png)
 - encoding，定义该元素的编码类型，会对不同长度的整数和字符串进行编码；
 - data，实际存放的数据；
 - len，encoding+data的总长度；
@@ -341,7 +341,7 @@ typedef struct dictEntry {
 ```
 使用链式hash解决hash冲突
 但是随着数据的增加, 耗时会越来越长, 所以会有rehash
-![[Redis-Hash表.png]]
+![Redis-Hash表](../_imgs/Redis-Hash表.png)
 
 #### rehash
 
@@ -422,7 +422,7 @@ typedef struct intset {
 
 当新元素加入到整数集合里, 如果新元素的类型比整数集合现有的所有元素类型都要长时, 整数集合需要先进行升级, 也就是所有的元素都按新元素扩展contents的空间大小, 然后再插入新元素. 升级的过程也需要保证元素的有序.
 升级时, 不会分配新的数组, 而是在原数组上扩展空间, 然后将每个元素按间隔类型大小分割
-![[整数集合的升级.png]]
+![整数集合的升级](../_imgs/整数集合的升级.png)
 - 作用: 节省内存, 在需要时才升级
 - 但是不支持降级
 
@@ -490,7 +490,7 @@ typedef struct zset {
 zset对象在插入数据或更新数据时, 会依次在跳表和hash表中执行相应操作.
 
 跳表是多层的有序链表, 能通过高层的遍历大幅缩短时间
-![[Redis-跳表.png]]
+![Redis-跳表](../_imgs/Redis-跳表.png)
 
 ```c
 typedef struct zskiplistNode {

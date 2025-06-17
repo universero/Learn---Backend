@@ -1,4 +1,4 @@
-> [[GMP| goroutine基础知识]]
+> [ goroutine基础知识](../../基础知识/_docs/GMP.md)
 > [参考博客](https://strikefreedom.top/archives/high-performance-implementation-of-goroutine-pool#%E5%8F%82%E8%80%83)
 > ___
 
@@ -55,4 +55,4 @@ func (srv *Server) Serve(l net.Listener) error {
 1. 检查当前 Worker 队列中是否有可用的 Worker，如果有，取出执行当前的 task；
 2. 没有可用的 Worker，判断当前在运行的 Worker 是否已超过该 Pool 的容量：{是 —> 再判断工作池是否为非阻塞模式：[是 ——> 直接返回 nil，否 ——> 阻塞等待直至有 Worker 被放回 Pool]，否 —> 新开一个 Worker（goroutine）处理}；
 3. 每个 Worker 执行完任务之后，放回 Pool 的队列中等待。
-![[GoroutinePool逻辑.png]]
+![GoroutinePool逻辑](../_imgs/GoroutinePool逻辑.png)

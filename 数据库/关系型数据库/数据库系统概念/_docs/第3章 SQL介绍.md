@@ -1,8 +1,8 @@
->[[数据库系统概念.pdf#page=72&selection=14,0,16,2|SQL介绍]]
+>[](数据库系统概念.pdf#page=72&selection=14,0,16,2|SQL介绍)
 ***
 ## SQL数据定义
 
-> [[数据库系统概念.pdf#page=73&selection=49,0,51,4|SQL数据定义]]
+> [](数据库系统概念.pdf#page=73&selection=49,0,51,4|SQL数据定义)
 
 - 基本类型
 	- char(n)：长度n的定长字符串
@@ -36,7 +36,7 @@ create table r
 - alter table r drop A：删除属性
 ## SQL查询结构
 
-> [[数据库系统概念.pdf#page=76&selection=264,0,266,7|SQL查询的基本结构]]
+> [](数据库系统概念.pdf#page=76&selection=264,0,266,7|SQL查询的基本结构)
 
 - select：查询结果中需要的属性
 	- * 标识所有属性
@@ -56,7 +56,7 @@ create table r
 
 ## 附加的基本运算
 
-> [[数据库系统概念.pdf#page=82&selection=132,0,132,7|附加的基本运算]]
+> [](数据库系统概念.pdf#page=82&selection=132,0,132,7|附加的基本运算)
 
 - 更名运算：old_name as new_name 能重命名属性或关系 
 	- 新名称称为 相关名称、表别名、相关变量或元组变量
@@ -72,7 +72,7 @@ create table r
 
 ## 集合运算
 
-> [[数据库系统概念.pdf#page=85&selection=228,0,228,4|集合运算]]
+> [](数据库系统概念.pdf#page=85&selection=228,0,228,4|集合运算)
 
 - 并运算
 	- union：求并集，但自动去重
@@ -86,7 +86,7 @@ create table r
 
 ## 空值
 
-> [[数据库系统概念.pdf#page=88&selection=173,0,173,2|空值]]
+> [](数据库系统概念.pdf#page=88&selection=173,0,173,2|空值)
 
 如果算数表达式任一输入为空则结果为空
 设计空值的比较运算的结果是为unknown
@@ -104,7 +104,7 @@ create table r
 
 ## 聚集函数
 
-> [[数据库系统概念.pdf#page=89&selection=222,0,222,4|聚集函数]]
+> [](数据库系统概念.pdf#page=89&selection=222,0,222,4|聚集函数)
 
 聚集函数(aggregate function)是以值集为输入并返回单个值的函数
 SQL提供五个标准聚集函数
@@ -129,7 +129,7 @@ SQL提供五个标准聚集函数
 
 ## 嵌套子查询
 
-> [[数据库系统概念.pdf#page=94&selection=14,0,14,5|嵌套子查询]]
+> [](数据库系统概念.pdf#page=94&selection=14,0,14,5|嵌套子查询)
 
 子查询是嵌套在where子句中查询语句
 
@@ -156,7 +156,7 @@ SQL提供五个标准聚集函数
 
 ## 数据库修改
 
-> [[数据库系统概念.pdf#page=101&selection=256,0,256,6|数据库修改]]
+> [](数据库系统概念.pdf#page=101&selection=256,0,256,6|数据库修改)
 
 - 删除
 	- 只能删除元组，不能删除属性上某些值

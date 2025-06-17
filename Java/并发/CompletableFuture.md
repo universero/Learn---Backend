@@ -41,7 +41,7 @@ public class CompletableFuture<T> implements Future<T>, CompletionStage<T> {
 }
 ```
 
-![[CompletableFuture实现关系.png]]
+![CompletableFuture实现关系](../_imgs/CompletableFuture实现关系.png)
 
 `CompletionStage` 接口描述了一个异步计算的阶段。很多计算可以分成多个阶段或步骤，此时可以通过它将所有步骤组合起来，形成异步计算的流水线。
 
