@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "后端学习.md",
+                "file": "index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "后端学习"
+              "title": "index"
             }
           }
         ]
@@ -187,6 +187,23 @@
   },
   "active": "af814d0b9e46afd7",
   "lastOpenFiles": [
+    "场景/场景.md",
+    "index.md",
+    "场景/_docs",
+    "_post/AI/MCP/_docs/核心架构.md",
+    "_post/AI/MCP/_docs/Transports.md",
+    "_post/AI/MCP/_docs/Prompts.md",
+    "_post/AI/MCP/_docs/Tools.md",
+    "_post/AI/MCP/_docs/Sampling.md",
+    "_post/AI/MCP/_docs/Roots.md",
+    "_post/AI/MCP/_docs/Resource.md",
+    "_post/AI/MCP/_docs",
+    "_post/AI/MCP/MCP.md",
+    "_post/AI/MCP",
+    "_post/AI/AI.md",
+    "_post/基本架构.png",
+    "_post/AI",
+    "_post",
     "README.md",
     "_config.yaml",
     "新建 文本文档.txt",
@@ -201,7 +218,6 @@
     "AI/MCP/_docs/核心架构.md",
     "AI/MCP/_docs/Resource.md",
     "AI/MCP/_docs",
-    "后端学习.md",
     "AI/AI.md",
     "计算机网络/零碎知识点/零碎知识点.md",
     "计算机网络/零碎知识点/_docs/JSON-RPC 2.0.md",
@@ -209,29 +225,14 @@
     "AI/MCP/_imgs/基本架构.png",
     "AI/MCP/_imgs",
     "AI/MCP",
-    "AI",
     "self/画图.md",
-    "self/草稿.md",
-    "数据库/关系型数据库/数据库系统概念/_docs/数据库系统概念.pdf",
-    "self/付宇豪-华东师范大学.pdf",
-    "数据库/关系型数据库/数据库系统概念/数据库系统概念.md",
-    "self/Dashboard.md",
-    "Go/性能分析/_docs/常见数据结构性能.md",
-    "Go/性能分析/性能分析.md",
-    "算法/刷题日记/热题100/25-05-20.md",
-    "算法/刷题日记/热题100/25-04-.md",
-    "算法/刷题日记/热题100/25-04-29.md",
-    "消息队列/_docs/概述.md",
     "Go/kitex/_imgs/Pasted image 20250507193855.png",
-    "数据库/ElasticSearch/_imgs",
-    "数据库/ElasticSearch/_docs",
     "Go/kitex/_imgs/Kitex架构设计.png",
     "消息队列/RabbitMQ/_imgs/RabbitMQ架构.png",
     "消息队列/RabbitMQ/_imgs/AMQP协议流程图.png",
     "数据库/关系型数据库/_imgs/ReadView四个字段.png",
     "数据库/关系型数据库/_imgs/隔离级别与并发现象.png",
     "数据库/MongoDB/_imgs/monstache工作流程.png",
-    "操作系统/MIT-6.S081/_imgs/barrier.png",
     "设计模式/简单工厂模式.canvas"
   ]
 }
