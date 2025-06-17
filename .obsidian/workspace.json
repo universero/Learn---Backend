@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "杂谈/杂谈.md",
+                "file": "index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "杂谈"
+              "title": "index"
             }
           }
         ]
@@ -187,8 +187,8 @@
   },
   "active": "9b663a907a2c11e5",
   "lastOpenFiles": [
-    "杂谈/Bugs/Bugs.md",
     "杂谈/杂谈.md",
+    "杂谈/Bugs/Bugs.md",
     "杂谈/Bugs/_docs/25-02-22 ownerpro：mysql认证插件.md",
     "分布式/MIT6.824/MIT6.824.md",
     "场景/_docs/常见认证.md",
