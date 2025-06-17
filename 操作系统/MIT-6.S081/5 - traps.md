@@ -4,7 +4,7 @@
 ### Calling conventions and stack frames RISC-V
 
 #### calling conventions
-![[RSIC-V的C类型.png]]
+![RSIC-V的C类型](_imgs/RSIC-V的C类型.png)
 #### c语言到汇编
 
 每个处理器都有一个关联的ISA(Instruction Sets Architecture), 每条指令都有一个对应的二进制编码或Opcode决定处理器应该进行怎样的操作. 在编译C语言时, 编译器会生成汇编语言, 然后通过汇编语言生成可执行文件, 这里还涉及到链接等操作, 但是不是课程重点, 跳过
@@ -19,7 +19,7 @@ RISC-V 中RISC时精简指令集(Reduced Instruction Set Computer), 而x86是CIS
 如果查看RISC-V的文档，可以发现RISC-V的特殊之处在于：它区分了Base Integer Instruction Set和Standard Extension Instruction Set。Base Integer Instruction Set包含了所有的常用指令，比如add，mult。除此之外，处理器还可以选择性的支持Standard Extension Instruction Set。例如，一个处理器可以选择支持Standard Extension for Single-Precision Float-Point。这种模式使得RISC-V更容易支持向后兼容。 每一个RISC-V处理器可以声明支持了哪些扩展指令集，然后编译器可以根据支持的指令集来编译代码。
 
 #### RISC-V寄存器
-![[RSIC-V中的寄存器.png]]这个表里面是RISC-V寄存器, 寄存器是CPU或者处理器上, 预先定义的可以用来存储数据的位置. 寄存器之所以重要是因为汇编代码并不是在内存上执行，而是在寄存器上执行，也就是说，当我们在做add，sub时，我们是对寄存器进行操作。所以你们通常看到的汇编代码中的模式是，我们通过load将数据存放在寄存器中，这里的数据源可以是来自内存，也可以来自另一个寄存器。之后我们在寄存器上执行一些操作。如果我们对操作的结果关心的话，我们会将操作的结果store在某个地方。这里的目的地可能是内存中的某个地址，也可能是另一个寄存器。这就是通常使用寄存器的方法。
+![RSIC-V中的寄存器](_imgs/RSIC-V中的寄存器.png)这个表里面是RISC-V寄存器, 寄存器是CPU或者处理器上, 预先定义的可以用来存储数据的位置. 寄存器之所以重要是因为汇编代码并不是在内存上执行，而是在寄存器上执行，也就是说，当我们在做add，sub时，我们是对寄存器进行操作。所以你们通常看到的汇编代码中的模式是，我们通过load将数据存放在寄存器中，这里的数据源可以是来自内存，也可以来自另一个寄存器。之后我们在寄存器上执行一些操作。如果我们对操作的结果关心的话，我们会将操作的结果store在某个地方。这里的目的地可能是内存中的某个地址，也可能是另一个寄存器。这就是通常使用寄存器的方法。
 寄存器是用来进行任何运算和数据读取的最快的方式，这就是为什么使用它们很重要，也是为什么我们更喜欢使用寄存器而不是内存。
 通常我们在谈到寄存器的时候，我们会用它们的ABI名字。不仅是因为这样描述更清晰和标准，同时也因为在写汇编代码的时候使用的也是ABI名字。
 
@@ -32,7 +32,7 @@ a0到a7寄存器是用来作为函数的参数。如果一个函数有超过8个
 
 #### Stack
 
-![[stackframe.png]]
+![stackframe](_imgs/stackframe.png)
 每一次我们调用一个函数，函数都会为自己创建一个Stack Frame，并且只给自己用。函数通过移动Stack Pointer来完成Stack Frame的空间分配。
 对于Stack来说，是从高地址开始向低地址使用。所以栈总是向下增长。当我们想要创建一个新的Stack Frame的时候，总是对当前的Stack Pointer做减法。一个函数的Stack Frame包含了保存的寄存器，本地变量，并且，如果函数的参数多于8个，额外的参数会出现在Stack中。所以Stack Frame大小并不总是一样，即使在这个图里面看起来是一样大的。不同的函数有不同数量的本地变量，不同的寄存器，所以Stack Frame的大小是不一样的。但是有关Stack Frame有两件事情是确定的：
 - Return address总是会出现在Stack Frame的第一位
@@ -213,9 +213,9 @@ xv6分配一个完整的page存储栈, return addr和prev fram相对于栈指针
 具体需要做的步骤如下
 - 在defs.h中完善backtrace的定义, 向sys_sleep中插入这个函数的调用
 - 在riscv.h中添加r_fp函数来获取当前栈地址
-- 栈的内存分布![[stack-layout.png]]
+- 栈的内存分布![stack-layout](_imgs/stack-layout.png)
 - 唯一需要注意的是从一个地址处取出值时, 需要先将这个地址转型成指针然后再取值, 其余的都很简单
-![[backtrace.png]]
+![backtrace](_imgs/backtrace.png)
 
 ### Alarm (hard)
 
@@ -317,7 +317,7 @@ Once you pass test0, test1, and test2 run usertests to make sure you didn'
 
 对于test0, 我们需要实现的是能够成功的执行handler
 对于系统调用sys_sigalarm, 我们做的事情非常简单, 只需要将传入的alarm配置存储到proc的字段中即可
-![[sigalarm.png]]
+![sigalarm](_imgs/sigalarm.png)
 核心是修改usertrap, 根据提示, 我们需要做的是在which_dev=2时添加调用handler的逻辑, 已经ticks的管理逻辑
 ticks的管理非常简单, 每一次触发就将passed+1, 然后调用了handler就将passed清零, 实现周期性调用
 而调用handler, 我们第一时间想到的肯定是调用这个函数, 也就是利用p->handler中存储的函数指针来调用. 但是这里有一个很容易被忽略的问题, 执行trap时, 整体处于内核态, 使用的是kernel的页表, 直接调用是找不到这个函数的, 只能通过间接的方式来实现调用. 阅读usertrap的代码, 很容易发现, trap结束后用户程序继续的位置是由trapframe中的epc决定的, 在usertrapret中, 会将sepc寄存器设置为trapframe中的epc的值, 然后用户空间从这个位置开始继续执行, 所以这里直接将epc的值改为handler的地址就可以了
@@ -326,5 +326,5 @@ ticks的管理非常简单, 每一次触发就将passed+1, 然后调用了handle
 提示里要求保存需要的寄存器, 这里我换了个思考的方式, 加入没有新的这个feature, 所有的状态都存在trapframe中, 然后usertrapret. 如果我们要回到这个状态的话, 只需要用一个页来存调用handler前的trapframe即可, 作为副本在执行sigreturn的时候再拷贝回来就行.
 于是在proc.c中初始化进程和释放进程时都额外管理一个usertrapframe用作副本
 test2要求, 在handler返回前不可重入, 第一想法是锁, 但是想了想发现这个不可重入是为了避免当个进程多次调用handler导致先前的状态被覆盖了, 不存在多个进程的竞态条件没必要用锁. 前面用到了usertrapframe, 那么正好可以利用一下这个, 如果这个副本是空的, 说明没有调用过handler或者已经结束了, 而不为空则不行. 怎么判断是否为空呢? trapframe里存了一些和内核相关的字段, 如内核页表, 选一个不可能是0的作为条件即可. 不过要记得每次sigreturn和proc初始化时需要将usertrapframe设置为全空
-![[test1.png]]
-![[sigreturn.png]]
+![test1](_imgs/test1.png)
+![sigreturn](_imgs/sigreturn.png)

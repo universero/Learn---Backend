@@ -230,6 +230,6 @@ There are two issues that complicate your task:
 - You have to handle the case in which one thread races around the loop before the others have exited the barrier. In particular, you are re-using the bstate.nthread variable from one round to the next. Make sure that a thread that leaves the barrier and races around the loop doesn't increase bstate.nthread while a previous round is still using it.
 Test your code with one, two, and more than two threads.
 
-![[barrier.png]]
+![barrier](_imgs/barrier.png)
 进入barrier时, 先获取bstate的锁, 然后增加进入barrier的线程数, 如果不是所有的都到来就进入wait, 如果所有的都到了, 则增加轮数, 然后清零等待的, 并唤醒所有在等待.
 最核心的地方在于, wait处不能用while循环, 因为这里不是抢占资源, 所以不会存在虚假唤醒的情况, 被唤醒了就是说明所有的都到了, 该继续执行了, 如果用了while循环, 很可能出现这样的情况: threadn到达时, 所有的都到了, 唤醒所有在等待的, 然后继续执行到下一个round, nthread++然后进入wait状态; 这时其他的被唤醒的, 在while中检查, 发现不是所有的都到了(nthread\==0)继续等待, 这样就会一直等待下去.

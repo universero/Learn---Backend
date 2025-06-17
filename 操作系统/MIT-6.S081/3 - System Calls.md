@@ -16,14 +16,14 @@
 #### xv6 organization
 
 The xv6 kernel source is in the /kernel/. 
-![[xv6 kernel source files.png]]
+![xv6 kernel source files](_imgs/xv6%20kernel%20source%20files.png)
 The inter-module interfaces are defined in defs.h
 
 #### Process overview
 
 The mechanisms used by the kernel to implement processes include the user/supervisor mode flag, address spaces, and time-slicing of threads.
 Xv6 uses page tables to give each process its own address space.
-![[Layout of a process’s virtual address space.png]]
+![Layout of a process’s virtual address space](_imgs/Layout%20of%20a%20process’s%20virtual%20address%20space.png)
 - In the layout, instructions come first, followed by global variables, the the stack, and finally a heap area that the process can expand as needed.At the top of the address space xv6 reserves a page for a trampoline and a page mapping the process's trapframe which used to trasition into the kernel and back; the trampoline page contains the code to transition in and our of the kernel and mapping the trapframe is necessary to save/restore the state of the user process.
 - Xv6 only 38 of 64 bits as virtual address, thus the maximum address is 2^38 -1. which is MAXVA(kernel/riscv.h).
 - Xv6 kernel maintains many pieces of state for each process, which it gathers into a struct proc(kernel/proc.h)
@@ -44,20 +44,20 @@ hints:
 
 ### 分析
 
-![[trace.c.png]]
+![trace.c](_imgs/trace.c.png)
 分析用户程序可以发现, trace命令的流程是先校验参数是否符合要求, 然后执行trace命令, 用掩码标识需要追踪的系统调用, 然后正常执行之后的命令.
 对于系统调用trace, 只有一个参数就是掩码, 一个返回值标识是否成功追踪
 
 根据提示, 下一步要做的是在sys_trace()中将需要追踪的系统调用记录到进程结构中(需要增加新的变量), 由于trace是用mask判断是否需要追踪的, 所以只需要在proc.h中记录mask就行
 
-![[proc-mask.png]]
+![proc-mask](_imgs/proc-mask.png)
 
 再下一步就需要在sys_trace中记录mask
 
-![[sys_trace.png]]
+![sys_trace](_imgs/sys_trace.png)
 
 修改fork方法, 实现子进程能继承父进程的mask
-![[fork-tarce.png]]
+![fork-tarce](_imgs/fork-tarce.png)
 
 ## Sysinfo(moderate)
 
@@ -82,7 +82,7 @@ hints:
 
 根据提示先查看sys_fstat()函数和filestat()函数学习如何使用copyout()
 
-![[copyout.png]]
+![copyout](_imgs/copyout.png)
 看注释可以直到该函数的作用是从内核向用户空间复制, 在给定的页表中, 将长度为len的字节从src拷贝的目的虚拟地址dstva
 
 很明显sysinfo系统调用要做的就是构造一个sysinfo结构体, 填充相关字段后拷贝到用户传入的sysinfo结构体指针所在位置.
@@ -92,8 +92,8 @@ hints:
 
 收集freemem需要在kalloc.c中添加一个新的函数
 参照其他内存相关的函数, 这里很容易得到只需要遍历一下空闲列表就能算出来
-![[c_freemem.png]]
+![c_freemem](_imgs/c_freemem.png)
 同时, 看kalloc的代码也能发现, xv6组织内存的方式是将空闲页表作为一个链表串联, 每次释放一个页时, 就将其拼接到头部
 
 收集nproc需要在proc.c中添加一个新的函数
-![[c_nproc.png]]
+![c_nproc](_imgs/c_nproc.png)

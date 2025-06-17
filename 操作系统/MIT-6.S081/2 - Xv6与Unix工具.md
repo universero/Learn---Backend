@@ -93,7 +93,7 @@ sleep:
  ret
 ```
 - add the sleep into the UPROGS in the Makefile as following. The reason why there is a underline is that in xv6, user programs are compiled into executable files with an underscore (`_`) prefix
-![[UPROGS-sleep.png]]
+![UPROGS-sleep](_imgs/UPROGS-sleep.png)
 - finally implement the sleep.c in /user, the logic is simple, checking the args and call the system call sleep
 ```c
 //
@@ -210,7 +210,7 @@ Here are some hints
 ### Analysis
 - Firstly, create the prime.c in /user and add the prime to UPROG in make file
 - 感觉这里的分析有点难写就用中文了。不知道是我英语太差了，还是lab的文档写的太过简略，看完后压根不知道要做什么。搜了几篇博客后发现，要实现的应该是一个并发的素数筛，类似于厄拉托斯素数筛的并发版。大致的逻辑如下图
-![[并行素数筛.png]]
+![并行素数筛](并行素数筛.png)
 - 知道了要做什么之后，也算是有了方向。先看看厄拉托斯素数筛是什么。简单来说，如果要找出n及以下的所有素数，那么从2到n都先假设为素数，然后从2开始依次将遍历到的素数的倍数标记为非素数，如遍历到2就把4,6,8都标记为非素数.这样就能找到所有n及以下的素数
 - 那么对于prime这个程序来说,我们要做的就是将这么一个依次遍历的过程改成一个流水线的过程, 主线程向pipe中写入2到35, 第一个子线程输出2 然后 drop掉所有2的倍数, 写入所有不整除2的数
 - 实现思路

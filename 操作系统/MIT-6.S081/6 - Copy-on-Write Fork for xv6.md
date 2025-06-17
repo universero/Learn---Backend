@@ -6,7 +6,7 @@ ___
 
 当发生page falut时, 内核需要什么样的信息才能响应page fault?
 - 首先, 需要出错的虚拟地址. 目前, page fault时, xv6内核会打印错误的虚拟地址并保存在寄存器STVAL中. 当一个用户进程触发了page fault会进入trap机制
-- 还需要出错的原因, 对于不同场景需要有不同的响应, 如load page fault, store page fault或者jump page fault. SCAUSE(supervisor cause)寄存器存储了进入trap的原因, 对应关系如下![[SCAUSE.png]]
+- 还需要出错的原因, 对于不同场景需要有不同的响应, 如load page fault, store page fault或者jump page fault. SCAUSE(supervisor cause)寄存器存储了进入trap的原因, 对应关系如下![SCAUSE](_imgs/SCAUSE.png)
 - 最后需要知道的是触发page fault的指令地址, 这个地址存放在SEPC寄存器中, 同时保存在trapframe->epc中
 
 ### Lazy page allocation
@@ -67,13 +67,13 @@ cow fork只为子进程创建一个所有的PTE都指向父进程物理地址的
 	这里一开始只写了一个数组, 没有想到用锁, 参考了博客后才想到多个cpu时, 可能会多个进程同时操作一个物理地址, 所以要使用锁.
 	此外, 一开始数组的增删都是使用的函数, 没想到用宏, 对于C语言来说, 用宏能很大程度上简化代码
 	另外就是, 引用为1或0的特殊情况一开始都是由外部函数判断然后分支处理的, 这里不如博客中写的好, 在kalloc中用一个函数包装一下能减少外部调用的代码
-	![[count.png]]
+	![count](_imgs/count.png)
 - 页表拷贝
-	这里的逻辑很简单, 很容易就想到了, 但是有个值得注意的地方, 只有是可写的页才应该用写时复制, 复制会让原本不可写的页进过写时复制后导致可写![[页表拷贝.png]]
+	这里的逻辑很简单, 很容易就想到了, 但是有个值得注意的地方, 只有是可写的页才应该用写时复制, 复制会让原本不可写的页进过写时复制后导致可写![页表拷贝](_imgs/页表拷贝.png)
 - 写时复制
-	这里的做的事情是判断是否需要新的物理页, 如果需要则拷贝新的, 然后重新映射pte. 这里博客的思路很好, 封装后, 即使不需要新的页, 也可以用一样的逻辑, 简化了代码.	![[写时复制.png]]
+	这里的做的事情是判断是否需要新的物理页, 如果需要则拷贝新的, 然后重新映射pte. 这里博客的思路很好, 封装后, 即使不需要新的页, 也可以用一样的逻辑, 简化了代码.	![写时复制](_imgs/写时复制.png)
 - cow页判断
-	一开始的cow页判断只判断了cow位, 其实这是不够的, 因为还必须要在sz范围内, 然后需要页表项存在, 否则非法访问页可能也会进入cow处理导致安全漏洞![[cow页判断.png]]
+	一开始的cow页判断只判断了cow位, 其实这是不够的, 因为还必须要在sz范围内, 然后需要页表项存在, 否则非法访问页可能也会进入cow处理导致安全漏洞![cow页判断](_imgs/cow页判断.png)
 
 整体的逻辑感觉和参考博客写的没有太大的区别, 但是一直没有通过测试, 连simple的输出都没有, 对照着博客也没有找到不同. 最后是对着博客修改类型才通过的, 这里初步怀疑是地址在void*, uint等类型转换时有类型设置的不合理, 导致了错误的逻辑, 然后把每个页中断的进程都kill了, 包括init进程.
 
@@ -111,11 +111,11 @@ hints
 #### 分析
 
 sysproc中的修改是简单的, 正数直接加, 负数直接释放
-![[sbrk.png]]
+![sbrk](_imgs/sbrk.png)
 trap.c中为了兼容cow, 做了个封装, 当信号是13或十五时, 用pagefaulthandler统一处理
-![[pagefaulthandler.png]]
+![pagefaulthandler](_imgs/pagefaulthandler.png)
 vm.c中类似于cow添加一个检测是否为lazy页的函数, 以及一个分配lazy页的函数
-![[lazy.png]]
+![lazy](_imgs/lazy.png)
 比cow还要简单一些, 但是有些细节容易忽略, 首先是copyin和copyout都可能访问到lazy的页需要用同样的方法处理一下. 以及题目说某些页不需要unmap是panic, 想了很久的条件, 没想到是直接把panic改成continue就可以过...
 
 与之矛盾的是, usertests中有个测试点是sbrk8000, 如果只有cow可以过, lazy后会一直在walk处panic, 导致一直过不去. 初步判断是前面的条件给的太松了, 但是其实也不应该超过MAXVA的, 整不明白

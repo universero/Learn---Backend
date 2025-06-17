@@ -14,12 +14,12 @@ ___
 
 ## Records
 
-### [[1 - 概览与环境搭建|Overview & Environment Configuration]]
+### [Overview & Environment Configuration](1%20-%20概览与环境搭建.md)
 
-### [[2 - Xv6与Unix工具 | Xv6 & Unix utilities]]
+### [ Xv6 & Unix utilities](2%20-%20Xv6与Unix工具%20)
 
-### [[3 - System Calls|System Calls]]
+### [System Calls](3%20-%20System%20Calls.md)
 
-### [[4 - Pagetable | Page table]]
-### [[5 - traps | traps]]
-### [[6 - Copy-on-Write Fork for xv6|Copy On Write Fork]]
+### [ Page table](4%20-%20Pagetable%20)
+### [ traps](5%20-%20traps%20)
+### [Copy On Write Fork](6%20-%20Copy-on-Write%20Fork%20for%20xv6.md)

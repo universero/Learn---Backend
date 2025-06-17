@@ -31,7 +31,7 @@ xv6中每个process有一个单独的page table描述了用户地址空间, 同�
 QEMU的RAM从0x80000000至少到0x86400000(PHYSTOP), QEMU在0x80000000以下的地址中, 将设备接口作为内存映射暴露给软件, 内核通过读写特定地址实现与硬件的交互.
 内核空间中使用“直接映射”来获取RAM和内存映射的设备寄存器；也就是说，映射与物理地址相等的虚拟地址上的资源。
 
-![[xv6内存映射.png]]
+![xv6内存映射](_imgs/xv6内存映射.png)
 直接映射简化了读写物理内存的内核代码
 
 不使用直接映射的部分
@@ -70,7 +70,7 @@ main中调用了kinit来初始化分配器, 记录所有在内核结束位置到
 
 当一个进程向内核申请用户内存时, 内核会用kalloc分配物理内存, 然后添加PTE到进程的页表中
 
-![[用户内存layout.png]]
+![用户内存layout](_imgs/用户内存layout.png)
 
 ### Code: sbrk
 
@@ -106,13 +106,13 @@ hints
 - 在proc.h中给进程添加一个字段存储共享页地址
 	- 添加一个usyscall类型的指针字段即可
 - 在proc_pagetable()函数中给USYSCALL这个虚拟地址映射到usyscall所在物理页, 且设置只读权限
-	- 需要注意的是还需要一个PTE_U权限, 否则用户空间无法访问![[map共享页.png]]
+	- 需要注意的是还需要一个PTE_U权限, 否则用户空间无法访问![map共享页](_imgs/map共享页.png)
 	- uvmunmap的作用是取消第二个参数开始的n个页映射
 - 在allocateproc()时初始化这个页, 并存入pid
-	- kalloc会返回一个物理地址, 向其中填充满无意义的值,  使用前需要用memset初始化一下![[分配共享页.png]]
+	- kalloc会返回一个物理地址, 向其中填充满无意义的值,  使用前需要用memset初始化一下![分配共享页](_imgs/分配共享页.png)
 - 在freeproc()中增加共享页释放逻辑
-	- 在freeproc中释放usyscall的物理内存![[释放共享页.png]]
-	- 此外还需要在释放页表时移除掉usyscall的映射, 否则可能会导致freewall递归释放页表时出错![[移除共享页映射.png]]
+	- 在freeproc中释放usyscall的物理内存![释放共享页](_imgs/释放共享页.png)
+	- 此外还需要在释放页表时移除掉usyscall的映射, 否则可能会导致freewall递归释放页表时出错![移除共享页映射](_imgs/移除共享页映射.png)
 ### print a page table (easy)
 
 > To help you visualize RISC-V page tables, and perhaps to aid future debugging, your second task is to write a function that prints the contents of a page table.
@@ -133,7 +133,7 @@ hints
 题意非常的明确, 需要做的事情也非常的直接
 - 在defs.h中声明函数vmprint()
 - 在vm.c中定义函数vmprint(), 参考freewalk函数实现递归访问page table
-	- 为了能控制深度, 同时避免代码太复杂, 就用了一个字符串来表示前缀(只是因为这个只有三层所以可以行得通, 如果多一层都不行, 算是取了个巧)![[vmprint.png]]
+	- 为了能控制深度, 同时避免代码太复杂, 就用了一个字符串来表示前缀(只是因为这个只有三层所以可以行得通, 如果多一层都不行, 算是取了个巧)![vmprint](_imgs/vmprint.png)
 - 在exec.c返回前打印pid\==1的page table, 用%p打印64b的地址
 
 
@@ -156,6 +156,6 @@ Some hints:
 需要完成的要求如下
 - 在sysproc.c中实现系统调用pgaccess(), 接受三个参数用户页开始的虚拟地址, 需要检查的页数, 用户空间缓冲区
 - 用户空间的缓冲区以bitmask(第一页在最小位)的形式存储结果, 现在内核中完成然后copyout到用户空间中
-	- 思路还是很直接的, 写起来也比较简单, 只在解析参数这里错了, argint拿第二个参数时第一个参数应该是1![[pageaccess.png]]
+	- 思路还是很直接的, 写起来也比较简单, 只在解析参数这里错了, argint拿第二个参数时第一个参数应该是1![pageaccess](_imgs/pageaccess.png)
 - 在riscv.h中定义PTE_A作为访问标志, 需要确保check后将其清除
-	- 对应PTE_A![[PTE_A.png]]
+	- 对应PTE_A![PTE_A](_imgs/PTE_A.png)
