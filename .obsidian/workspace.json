@@ -13,15 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
+                "file": "Go/基础知识/基础知识.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "基础知识"
+            }
+          },
+          {
+            "id": "4a04b034859ec78e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "安卓/概述.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "概述"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -53,8 +68,8 @@
             "state": {
               "type": "reminder-list",
               "state": {},
-              "icon": "clock",
-              "title": "Reminders"
+              "icon": "lucide-file",
+              "title": "插件不再活动"
             }
           },
           {
@@ -86,6 +101,16 @@
           },
           {
             "id": "0d2a2d619944ee3c",
+            "type": "leaf",
+            "state": {
+              "type": "surfing-tab-tree",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "插件不再活动"
+            }
+          },
+          {
+            "id": "281b7c559abf957c",
             "type": "leaf",
             "state": {
               "type": "surfing-tab-tree",
@@ -179,14 +204,26 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "surfing:surfing-bookmark-manager": false,
       "graph:查看关系图谱": false,
       "obsidian-excalidraw-plugin:新建绘图文件": false,
+      "surfing:surfing-bookmark-manager": false,
       "obsidian-kanban:创建新看板": false
     }
   },
-  "active": "9b663a907a2c11e5",
+  "active": "4a04b034859ec78e",
   "lastOpenFiles": [
+    "Go/基础知识/_docs/接口.md",
+    "安卓/概述.md",
+    "安卓",
+    "Go/基础知识/基础知识.md",
+    "Go/基础知识/_docs/组合.md",
+    "Go/基础知识/_docs/方法.md",
+    "Go/基础知识/_docs/异常.md",
+    "Go/基础知识/_docs/函数.md",
+    "数据库/关系型数据库/数据库系统概念/_docs/数据库系统概念.pdf",
+    "设计模式/大话设计模式.pdf",
+    "index.md",
+    "资料/_info/代码随想录知识星球精华（最强八股文）第五版（Java篇）.pdf",
     "杂谈/杂谈.md",
     "杂谈/Bugs/Bugs.md",
     "杂谈/Bugs/_docs/25-02-22 ownerpro：mysql认证插件.md",
@@ -202,31 +239,19 @@
     "操作系统/MIT-6.S081/1 - 概览与环境搭建.md",
     "Git/_docs/分支.md",
     "README.md",
-    "index.md",
     "Go/kitex/_docs/概述.md",
     "Go/kitex/kitex.md",
     "Go/kitex/_imgs/Kitex架构设计.png",
     "场景/_docs",
     "_post/AI/MCP/_docs/核心架构.md",
-    "_post/AI/MCP/_docs/Transports.md",
-    "_post/AI/MCP/_docs/Prompts.md",
-    "_post/AI/MCP/_docs/Tools.md",
-    "_post/AI/MCP/_docs/Sampling.md",
-    "_post/AI/MCP/_docs/Roots.md",
-    "_post/AI/MCP/_docs/Resource.md",
     "_post/AI/MCP/_docs",
-    "_post/AI/MCP/MCP.md",
     "_post/AI/MCP",
     "_post/基本架构.png",
     "_post/AI",
     "_post",
     "_config.yaml",
-    "新建 文本文档.txt",
-    "AI/MCP/_docs",
     "Pasted image 20250612081810.png",
     "AI/MCP/_imgs/基本架构.png",
-    "AI/MCP/_imgs",
-    "AI/MCP",
     "Go/kitex/_imgs/Pasted image 20250507193855.png",
     "消息队列/RabbitMQ/_imgs/RabbitMQ架构.png",
     "消息队列/RabbitMQ/_imgs/AMQP协议流程图.png",
