@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "35a9f89e597799d6",
+        "id": "70f4c5faa1153cca",
         "type": "tabs",
         "children": [
           {
-            "id": "abdfdf477f9a9f93",
+            "id": "100e1baaca565696",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AI/Infra/概述.md",
+                "file": "Go/基础知识/基础知识.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "概述"
+              "title": "基础知识"
             }
           }
         ]
@@ -185,11 +185,19 @@
       "obsidian-kanban:创建新看板": true
     }
   },
-  "active": "abdfdf477f9a9f93",
+  "active": "100e1baaca565696",
   "lastOpenFiles": [
+    "Go/基础知识/_docs/常量.md",
     "Go/基础知识/基础知识.md",
-    "AIInfra.png",
     "AI/Infra/概述.md",
+    "安卓/概述.md",
+    "安卓",
+    "Go/基础知识/_docs/组合.md",
+    "Go/基础知识/_docs/方法.md",
+    "Go/基础知识/_docs/接口.md",
+    "Go/基础知识/_docs/异常.md",
+    "Go/基础知识/_docs/函数.md",
+    "AIInfra.png",
     "self/Dashboard.md",
     "AI/Infra",
     "Go/基础知识/_docs/Json和文本.md",
@@ -208,13 +216,7 @@
     "数据库/关系型数据库/数据库系统概念/_docs/B+-Tree.md",
     "杂谈/Bugs/_docs/25-02-22 记一个抽象的阿里云BUG.md",
     "杂谈/Bugs/Bugs.md",
-    "操作系统/MIT-6.S081/8 - Mutiprocessors & Locking.md",
     "Pasted image 20250627204233.png",
-    "Go/基础知识/_docs/Map.md",
-    "Go/基础知识/_docs/数组和slice.md",
-    "Go/基础知识/_docs/常量.md",
-    "Go/基础知识/_docs/字符串.md",
-    "Go/基础知识/_docs/复数.md",
     "self/腾讯犀牛鸟开源计划/_imgs/开源license说明.png",
     "self/腾讯犀牛鸟开源计划/tRPC",
     "self/腾讯犀牛鸟开源计划/_imgs/实战环节.png",
@@ -227,7 +229,6 @@
     "self/社团/技术分享",
     "self/社团/招新",
     "Excalidraw",
-    "Excalidraw/desktop.ini",
     "Go/kitex/_imgs/Kitex架构设计.png",
     "_post/基本架构.png",
     "Pasted image 20250612081810.png",
