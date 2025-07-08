@@ -1,10 +1,8 @@
 ___
 
 本仓库记录了我后端学习笔记以及一些其他的感兴趣的东西
-可以通过github page浏览[Learn—Backend | 后端学习记录](https://universero.github.io/Learn---Backend/)
 
 The repo is used to record my learning notes of backend and and some interests
-you can view it at my github page [Learn—Backend | 后端学习记录](https://universero.github.io/Learn---Backend/)
 ## Dev Language
 ### [Java](Java/Java.md)
 ### [Go](Go/Go.md)
