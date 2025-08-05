@@ -118,5 +118,29 @@
       ],
       "key": "L"
     }
+  ],
+  "font-size:increment-font-size": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "="
+    }
+  ],
+  "font-size:reset-font-size": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "Backspace"
+    }
+  ],
+  "font-size:decrement-font-size": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "-"
+    }
   ]
 }

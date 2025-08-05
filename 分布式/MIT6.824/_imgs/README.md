@@ -7,7 +7,6 @@ The repo is used to record my learning notes of backend and and some interests
 ### [Java](Java/Java.md)
 ### [Go](Go/Go.md)
 ### [Rust](Rust/Rust.md)
-## [[OCaml]]
 ## Base of CS
 ### [操作系统](操作系统/操作系统.md)
 ### [计算机网络](计算机网络/计算机网络.md)
