@@ -4,21 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "3f3eaa672a5c861f",
+        "id": "8e808ca9e287ee7c",
         "type": "tabs",
         "children": [
           {
-            "id": "5db3c0d5a0716745",
+            "id": "42a898e1360dbadd",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AI/深度学习/动手学深度学习/_docs/线性神经网络.md",
+                "file": "算法/数据结构&算法/_docs/链表.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "线性神经网络"
+              "title": "链表"
+            }
+          },
+          {
+            "id": "e63e9c8390e3259f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "算法/数据结构&算法/_docs/数组.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "数组"
             }
           }
         ]
@@ -185,54 +199,53 @@
       "obsidian-kanban:创建新看板": true
     }
   },
-  "active": "5db3c0d5a0716745",
+  "active": "a80a4cd21523dffc",
   "lastOpenFiles": [
-    "AI/深度学习/动手学深度学习/_docs/引言.md",
-    "AI/深度学习/动手学深度学习/_docs/多层感知机.md",
-    "AI/深度学习/动手学深度学习/_docs/线性神经网络.md",
+    "算法/数据结构&算法/_docs/数组.md",
+    "算法/数据结构&算法/_docs/链表.md",
+    "算法/数据结构&算法/_imgs/循环链表.png",
+    "算法/数据结构&算法/_imgs/双链表.png",
+    "算法/数据结构&算法/_imgs",
+    "算法/数据结构&算法/_imgs/单链表.png",
+    "算法/数据结构&算法/数据结构 & 算法.md",
+    "算法/数据结构&算法/_docs/字符串.md",
+    "算法/数据结构&算法/_docs/栈与队列.md",
+    "算法/数据结构&算法/_docs/图论.md",
+    "算法/数据结构&算法/_docs/贪心.md",
+    "算法/数据结构&算法/_docs/双指针.md",
+    "算法/数据结构&算法/_docs/回溯.md",
+    "算法/数据结构&算法/_docs/哈希表.md",
+    "算法/数据结构&算法/_docs/单调栈.md",
+    "算法/数据结构&算法/_docs/动态规划.md",
+    "算法/数据结构&算法/_docs/额外题目.md",
+    "算法/数据结构&算法/_docs/二叉树.md",
+    "算法/数据结构&算法/_docs/未命名",
+    "self/TODO.md",
+    "算法/数据结构&算法/_docs/堆.md",
+    "算法/数据结构&算法/_docs/FenwickTree.md",
+    "self/草稿.md",
+    "self/TODO/25暑假TODO.md",
+    "AI/深度学习/动手学深度学习/_imgs/复制.png",
+    "self/玄虹/Task List.md",
+    "Pasted image 20250805174122.png",
+    "self/My College Life/The First Half of My College Life.md",
+    "AI/深度学习/动手学深度学习/_docs/深度学习计算.md",
+    "AI/深度学习/动手学深度学习/_docs/卷积神经网络.md",
+    "AI/深度学习/动手学深度学习/_imgs/沃尔多游戏.png",
     "AI/深度学习/动手学深度学习/动手学深度学习.md",
-    "OCaml/_docs/The Basics of OCaml.md",
-    "OCaml/_docs/Introduction.md",
-    "OCaml/OCaml.md",
-    "未命名.md",
+    "AI/深度学习/动手学深度学习/_imgs/ReLU导数.png",
+    "AI/深度学习/动手学深度学习/_imgs/神经网络块.png",
+    "AI/深度学习/动手学深度学习/_imgs/tanh函数导数.png",
+    "AI/深度学习/动手学深度学习/_imgs/Pasted image 20250805113153.png",
     "README.md",
-    "场景/_docs/OAuth.md",
     "OCaml/_imgs",
     "OCaml/_docs",
     "OCaml",
-    "场景/_imgs/简化模式.png",
-    "场景/_imgs/OAuth授权码模式.png",
-    "AI/深度学习/动手学深度学习/_imgs/神经网络图.png",
     "AI/深度学习/动手学深度学习/_imgs",
-    "AI/深度学习/动手学深度学习/_imgs/引言-监督学习.png",
-    "AI/深度学习/动手学深度学习/_imgs/预备知识-LP范数.png",
-    "AI/深度学习/动手学深度学习/_imgs/Softmax回归.png",
     "场景/_imgs",
-    "场景/_imgs/OAuth流程.png",
-    "场景/场景.md",
-    "场景/_docs/常见认证.md",
-    "AI/深度学习/动手学深度学习/_docs/预备知识.md",
-    "self/草稿.md",
     "AI/深度学习/动手学深度学习/_docs",
-    "AI/深度学习/深度学习.md",
-    "AI/微调/微调.md",
     "AI/深度学习/动手学深度学习",
-    "AI/深度学习/MIT 6.S978/_docs/Assign1.md",
-    "AI/深度学习/MIT 6.S978/MIT 6.S978 Deep Generative Models.md",
-    "AI/深度学习/CMU 11-868/CMU 11-868.md",
-    "AI/深度学习/MIT 6.S978/_imgs/蒙特卡洛采样估计.png",
-    "AI/深度学习/MIT 6.S978/_imgs/ELBO.png",
-    "AI/深度学习/MIT 6.S978/_docs/Read Modeling Image Prior.md",
     "AI/深度学习/MIT 6.S978/_docs/NIPS-2012-natural-images-gaussian-mixtures-and-dead-leaves-Paper(翻译结果).pdf",
-    "AI/深度学习/MIT 6.S978/_docs/Ulyanov_Deep_Image_Prior_CVPR_2018_paper.pdf",
-    "AI/深度学习/MIT 6.S978/_docs/NIPS-2012-natural-images-gaussian-mixtures-and-dead-leaves-Paper.pdf",
-    "AI/深度学习/MIT 6.S978/_docs/Lec1 Introduce.md",
-    "AI/深度学习/MIT 6.S978/_imgs/generativemodels.png",
-    "AI/深度学习/CMU 11-785/CMU 11-785.md",
-    "操作系统/MIT-6.S081/8 - Mutiprocessors & Locking.md",
-    "操作系统/MIT-6.S081/MIT-6.S081.md",
-    "分布式/MIT6.824/_docs/Lab5 Sharded KV.md",
-    "运维/k8s集群管理/k8s集群管理.md",
     "设计模式/简单工厂模式.canvas"
   ]
 }
